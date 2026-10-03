@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="欧陆改革宗使徒信经研读：时间线、故事线、圣经神学与圣约神学；先宏观后逐条。对照三项联合信条与尼西亚、亚他那修信经条款，附记忆钩与应用。" />
+  <title>欧陆改革宗 · 使徒信经研读</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="assets/styles.css?v=creed20261003" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <button type="button" class="menu-toggle" id="menu-toggle" aria-label="切换目录" aria-expanded="false" aria-controls="sidebar">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="sr-only">欧陆改革宗 · 使徒信经研读</span>
+    <div class="header-spacer" aria-hidden="true"></div>
+    <div class="progress-bar" id="progress-bar" role="progressbar" aria-label="阅读进度"></div>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="目录">
+    <div class="sidebar-brand">
+      <div class="sidebar-brand-text">
+        <span class="brand-title">欧陆改革宗 · 使徒信经研读</span>
+        <span class="brand-sub">三项联合信条 · 三大普世信经 · 以基督为中心</span>
+      </div>
+      <button type="button" class="sidebar-close" id="sidebar-close" aria-label="关闭目录">×</button>
+    </div>
+    <div class="toc-search-wrap">
+      <input type="search" class="toc-search" id="toc-search" placeholder="筛选章节…" autocomplete="off" aria-label="搜索目录" />
+    </div>
+    <div class="toc-label">目录导航</div>
+    <nav class="toc-nav" id="toc-nav"></nav>
+    <div class="sidebar-footer">
+      <button type="button" class="btn-text" id="expand-all" title="展开全部折叠">展开全部</button>
+      <button type="button" class="btn-text" id="collapse-all" title="收起全部折叠">收起全部</button>
+    </div>
+  </aside>
+
+  <div class="app-shell" id="app-shell">
+    <main class="main" id="main">
+      <div class="content-inner">
+
+<section class="hero" id="top">
+  <div class="hero-mark" aria-hidden="true"></div>
+  <h1>使徒信经 · 欧陆改革宗研读</h1>
+  <p class="hero-brand-line">先看见整全救恩，再默想每一条认信</p>
+  <p class="lead">
+    使徒信经不是十二使徒各写一句的会议记录，而是<strong>使徒所传之福音</strong>在洗礼与教理中沉淀下来的短纲。本页按欧陆改革宗习惯：以<strong>三项联合信条</strong>（比利时信条、海德堡要理问答、多特信经）为教理坐标，以<strong>尼西亚信经、亚他那修信经</strong>护卫三一与基督位格；<span class="mark-core">先宏观（整本圣经 / 整全神学），后局部（逐条）</span>。信条只标条款与问答号，不转载其他信经全文；使徒信经本身短而公用，正文全文收录于下。
+  </p>
+  <div class="hero-meta">
+    <span class="chip chip-gold"><span class="chip-ico" aria-hidden="true">✝️</span>使徒信经</span>
+    <span class="chip chip-blue"><span class="chip-ico" aria-hidden="true">📜</span>圣约神学</span>
+    <span class="chip chip-teal"><span class="chip-ico" aria-hidden="true">⏳</span>圣经神学</span>
+    <a class="chip chip-amber" href="#sec-timeline"><span class="chip-ico" aria-hidden="true">🗓️</span>两条时间线</a>
+    <a class="chip chip-purple" href="#sec-story"><span class="chip-ico" aria-hidden="true">🗺️</span>故事线</a>
+    <a class="chip chip-green" href="#sec-text"><span class="chip-ico" aria-hidden="true">📖</span>信经全文</a>
+    <a class="chip chip-rose" href="#sec-memory"><span class="chip-ico" aria-hidden="true">🧠</span>速记十六钉</a>
+  </div>
+  <div class="hero-toolbar">
+    <button type="button" class="btn-text" id="expand-all-hero" title="展开全部折叠">⬇ 展开全部</button>
+    <button type="button" class="btn-text" id="collapse-all-hero" title="收起全部折叠">⬆ 收起全部</button>
+    <a class="btn-text" href="#sec-how">开始导论</a>
+  </div>
+  <div class="solas">
+    <div class="sola"><div class="sola-lat">Sola Scriptura</div><div class="sola-zh">唯独圣经</div></div>
+    <div class="sola"><div class="sola-lat">Sola Gratia</div><div class="sola-zh">唯独恩典</div></div>
+    <div class="sola"><div class="sola-lat">Sola Fide</div><div class="sola-zh">唯独信心</div></div>
+    <div class="sola"><div class="sola-lat">Solus Christus</div><div class="sola-zh">唯独基督</div></div>
+    <div class="sola"><div class="sola-lat">Soli Deo Gloria</div><div class="sola-zh">唯独神的荣耀</div></div>
+  </div>
+</section>
+
+<section class="one-line-section mod-oneline" id="s-oneline">
+  <h2 id="sec-oneline">🧭 一句话与读法</h2>
+  <div class="mark-legend" aria-label="标记图例">
+    <span><span class="mark-core">重点</span> 核心要点</span>
+    <span><span class="mark-hard">难点</span> 易混概念</span>
+    <span><span class="mark-christ">基督指向</span> 指向中保</span>
+    <span><span class="mark-apply">应用</span> 生活回应</span>
+    <span><span class="mark-warn">警戒</span> 需防偏差</span>
+    <span><span class="mark-promise">应许</span> 恩典应许</span>
+    <span><span class="mark-hub">枢纽</span> 历史节点</span>
+    <span><span class="mark-creed">信条</span> 认信校准</span>
+    <span><span class="mark-history">历史</span> 救赎历史</span>
+  </div>
+  <div class="one-line-card card card-gold">
+    <p class="one-line-lead mb-0"><strong>我信三一真神：父创造并护理，子在历史中降卑又升高作成救赎，圣灵把这救赎施行在圣而公之教会，直到身体复活与永生。</strong></p>
+  </div>
+  <p>信经的主语是「我信」，宾语不是一套抽象格言，而是<span class="mark-history">神在真实历史中的作为</span>。它把整本圣经的故事压成可在洗礼池边说出口的句子：创造、道成肉身、十架、复活、升天、再来、圣灵、教会、赦罪、复活、永生。海德堡要理问答把这短纲放在「拯救」部的门口（主日 7，Q&amp;A 22–23），因为真信心所抓住的，正是福音所应许、信经所概述的一切（Q&amp;A 21–22）。</p>
+  <div class="card-grid cols-3">
+    <div class="card">
+      <span class="card-tag">宏观</span>
+      <h4>先看整幅画</h4>
+      <p class="mb-0">三一、两种状态、恩典之约、教会与终末，是各条的「天空」。不先看天空，单句会变成口号。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">局部</span>
+      <h4>再咬每一条</h4>
+      <p class="mb-0">每条问四件事：前因是什么、它说什么、后果通向哪里、今天如何信靠与生活。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">校准</span>
+      <h4>用信条对信经</h4>
+      <p class="mb-0">使徒信经是纲；尼西亚与亚他那修护卫「是谁」；三项联合信条说明「如何得救、如何作教会」。</p>
+    </div>
+  </div>
+  <div class="motto">
+    <div class="motto-text">信经是洗礼的话、教理的骨、敬拜的锚，不是圣经之外的第二权威。</div>
+    <div class="motto-hint">规范是圣经（比利时信条第 5、7 条）；信经是教会对圣经总意的认信</div>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-how">
+  <h2 id="sec-how">📖 导论：为何先宏观、后逐条</h2>
+  <p>改革宗读信经，不是把句子背熟当作护身符，而是让短纲把人带回圣经的救赎历史。比利时信条第 7 条坚持：圣经充足，人所当信的救恩之道已完全包含于其中。信经的权威是<strong>派生的</strong>——它可信，是因为它忠于使徒的教训（徒 2:42），不是因为它自称由十二使徒分句写成。</p>
+  <h3 id="sec-how-angles">五个角度，同一条信仰</h3>
+  <div class="card-grid cols-2">
+    <div class="card">
+      <span class="card-tag">历史</span>
+      <h4>它从哪里来</h4>
+      <p class="mb-0">追问成文过程、洗礼场合、所针对的偏差，避免把后来的传说当成史实。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">释经</span>
+      <h4>圣经怎么说</h4>
+      <p class="mb-0">每条回到文法—历史的经文。信经是索引，经文是正文。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">系统</span>
+      <h4>教义如何相连</h4>
+      <p class="mb-0">三一、位格与二性、称义、教会、终末，彼此不可拆开贩卖。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">圣约</span>
+      <h4>约的子民如何认信</h4>
+      <p class="mb-0">「我信」是恩典之约里的回应，不是人把自己的信献给一位陌生人。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">教牧</span>
+      <h4>良心与敬拜</h4>
+      <p class="mb-0">海德堡问的是「这对你有何安慰」。信经要进到恐惧、哀哭、盼望与主日。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">护教</span>
+      <h4>边界在哪里</h4>
+      <p class="mb-0">点出古代与今日常见偏路（只谈道德、否定道成肉身、灵魂不灭代替身体复活），不把信经变成争辩技术。</p>
+    </div>
+  </div>
+  <h3 id="sec-how-order">本页阅读顺序</h3>
+  <ol>
+    <li><strong>全文</strong>：先听完整的认信，不要从难点句切入。</li>
+    <li><strong>前因后果</strong>：为何写成、写成之后教会用它做什么。</li>
+    <li><strong>两条时间线</strong>：信经文献史，以及信经所讲述的救赎史。</li>
+    <li><strong>故事线、圣经神学、圣约</strong>：宏观骨架。</li>
+    <li><strong>十六钉速记</strong>：先能复述，再进入深度。</li>
+    <li><strong>逐条</strong>：每条含经文、前因后果、信条坐标、记忆钩、应用。</li>
+  </ol>
+  <div class="callout callout-creed">
+    <strong class="cot">信条用法</strong>
+    <p class="mb-0">下文引用只给<strong>条款号 / 问答号</strong>。请以教会正式译本核对全文。尼西亚信经按传统条款主题称引；亚他那修信经按通行 1–44 段编号（三一 1–28，道成肉身与审判 29–44）。多特信经按项与条（如第二项第 3–4 条）。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-text">
+  <h2 id="sec-text">📜 使徒信经全文</h2>
+  <p>以下采用华人教会长期使用的传统中文（上帝译名；「圣而公之教会」）。另有「神」「圣而公同的教会」等译法，教义相同。标点在「降在阴间」前后略有分句差异，不改变认信内容。</p>
+  <div class="card card-gold">
+    <span class="card-tag">传统中文</span>
+    <h3 id="sec-text-body" class="mb-0" style="font-family:var(--font-serif);font-weight:600;line-height:1.9">我信上帝，全能的父，创造天地的主。<br/>我信我主耶稣基督，上帝的独生子；<br/>因圣灵感孕，由童贞女马利亚所生；<br/>在本丢彼拉多手下受难，被钉于十字架，受死，埋葬；<br/>降在阴间；第三天从死人中复活；<br/>升天，坐在全能父上帝的右边；<br/>将来必从那里降临，审判活人、死人。<br/>我信圣灵；<br/>我信圣而公之教会；我信圣徒相通；<br/>我信罪得赦免；<br/>我信身体复活；<br/>我信永生。阿们。</h3>
+  </div>
+  <p class="note">拉丁文传统起句 <em>Credo in Deum Patrem omnipotentem, Creatorem caeli et terrae</em>。信的对象是位格性的神，不是「相信宇宙很有意思」。</p>
+  <h3 id="sec-text-map">十六个认信单位（教学分句）</h3>
+  <p>海德堡以三一为总架（Q&amp;A 24），再按基督的名号、降卑与升高细拆（Q&amp;A 29–52），最后落到圣灵、教会与福分（Q&amp;A 53–58）。下表是本页的逐条目录，便于速记与对照。</p>
+  <div class="table-wrap table-scroll">
+    <table>
+      <thead><tr><th>钉</th><th>认信</th><th>海德堡</th><th>属于</th></tr></thead>
+      <tbody>
+        <tr><td class="year">1</td><td>全能的父，创造天地的主</td><td>Q&amp;A 26–28</td><td>父</td></tr>
+        <tr><td class="year">2</td><td>我主耶稣基督，独生子</td><td>Q&amp;A 29–34</td><td>子·名号</td></tr>
+        <tr><td class="year">3</td><td>圣灵感孕，童贞女所生</td><td>Q&amp;A 35–36</td><td>子·降卑</td></tr>
+        <tr><td class="year">4</td><td>本丢彼拉多手下受难</td><td>Q&amp;A 37–39</td><td>子·降卑</td></tr>
+        <tr><td class="year">5</td><td>钉十字架，受死，埋葬</td><td>Q&amp;A 40–43</td><td>子·降卑</td></tr>
+        <tr><td class="year">6</td><td>降在阴间</td><td>Q&amp;A 44</td><td>子·降卑</td></tr>
+        <tr><td class="year">7</td><td>第三天复活</td><td>Q&amp;A 45</td><td>子·升高</td></tr>
+        <tr><td class="year">8</td><td>升天，坐在父的右边</td><td>Q&amp;A 46–51</td><td>子·升高</td></tr>
+        <tr><td class="year">9</td><td>降临，审判活人死人</td><td>Q&amp;A 52</td><td>子·升高</td></tr>
+        <tr><td class="year">10</td><td>我信圣灵</td><td>Q&amp;A 53</td><td>圣灵</td></tr>
+        <tr><td class="year">11</td><td>圣而公之教会</td><td>Q&amp;A 54</td><td>圣灵之工</td></tr>
+        <tr><td class="year">12</td><td>圣徒相通</td><td>Q&amp;A 55</td><td>圣灵之工</td></tr>
+        <tr><td class="year">13</td><td>罪得赦免</td><td>Q&amp;A 56、21、60</td><td>福分</td></tr>
+        <tr><td class="year">14</td><td>身体复活</td><td>Q&amp;A 57</td><td>福分</td></tr>
+        <tr><td class="year">15</td><td>永生</td><td>Q&amp;A 58</td><td>福分</td></tr>
+        <tr><td class="year">16</td><td>阿们</td><td>Q&amp;A 21–22、59；词义参见 Q&amp;A 129</td><td>确信</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-why">
+  <h2 id="sec-why">🕰️ 前因后果：为何写成，写成之后做什么</h2>
+  <h3 id="sec-why-not">先澄清一个传说</h3>
+  <p><span class="mark-hard">难点</span>：五世纪前后流行一种讲法——十二使徒在五旬节后各贡献一句，合成信经（鲁非努 Rufinus 转述）。这是<strong>敬虔传说，不是史料</strong>。信经称为「使徒」，是因为内容是使徒的信仰，不是因为有一份使徒签名原稿。早期东方与西方的洗礼问答，句子长短并不一致，这本身就说明它是逐渐稳定的认信，而不是一次定稿。</p>
+  <h3 id="sec-why-cause">前因：教会为什么需要这短纲</h3>
+  <div class="card-grid cols-2">
+    <div class="card">
+      <span class="card-tag">圣经</span>
+      <h4>信仰本就要被承认</h4>
+      <p class="mb-0">太 28:19 的洗礼公式已是三一结构；罗 10:9–10 把「口里承认」与「心里相信」连在一起；提前 3:16、林前 15:3–4 是更早的福音摘要。信经是这些认信在教理中的成熟形态。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">洗礼</span>
+      <h4>下水之前要回答</h4>
+      <p class="mb-0">古罗马信经（Old Roman Creed，约二世纪及以后）以问答出现：「你信上帝全能的父吗？」受洗者逐一回答「我信」。信经原是<strong>誓言</strong>，不是墙上海报。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">边界</span>
+      <h4>信仰规则</h4>
+      <p class="mb-0">爱任纽、特土良所说的「信仰准则」（regula fidei）用短句守住：一位创造主、耶稣是神的儿子且真正成为人、肉身复活。用来识别否定创造的二元论、否定肉身的幻影说、否定复活的希利尼式灵魂观。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">合一</span>
+      <h4>众教会能一起说</h4>
+      <p class="mb-0">地方洗礼信经在西方逐渐汇成我们今日所见的使徒信经文本（约四至八世纪稳定；加洛林时代广泛用于教理与日课）。它比尼西亚信经更短，适合初信者与每日祷告。</p>
+    </div>
+  </div>
+  <h3 id="sec-why-effect">后果：写成之后，它进入哪里</h3>
+  <ul>
+    <li><strong>洗礼与坚振式的教理</strong>：人在加入约的群体时，不是只讲经历，而是承认这位神与这些作为。</li>
+    <li><strong>每日与主日</strong>：西方教会在日课与主日礼仪中诵读，使个人信心与教会认信对齐。</li>
+    <li><strong>宗教改革的教理书</strong>：路德大小问答、加尔文《基督教要义》第二卷的基督论叙事、海德堡要理问答主日 7–22，都以它为骨架。<span class="mark-creed">信条</span>海德堡 Q&amp;A 23 几乎整段复述信经，再在随后主日逐句讲解。</li>
+    <li><strong>不是第二正典</strong>：改教家拒绝「传说可以增补圣经」。信经若在某处说得过短（例如未写「与父同质」），就由尼西亚与亚他那修补上精度，而不是推翻它。</li>
+  </ul>
+  <div class="callout callout-history">
+    <strong class="cot">历史判断</strong>
+    <p class="mb-0"><span class="mark-history">历史</span>使徒信经是<strong>西方洗礼信经</strong>的成熟形态。东方礼仪的主信经是尼西亚—君士坦丁堡信经。二者不是两套福音：后者把前者已经相信的「子是真神、圣灵是主」说得更严密，以回应四世纪的争论。</p>
+  </div>
+  <h3 id="sec-why-flow">从圣经认信到教理短纲</h3>
+  <div class="mermaid-wrap diagram-scroll">
+    <pre class="mermaid">
+flowchart TB
+  S["圣经中的认信<br/>太28:19 · 林前15:3-4 · 罗10:9"] --> R["信仰准则<br/>爱任纽 · 特土良"]
+  R --> O["古罗马洗礼问答<br/>二世纪及以后"]
+  O --> A["使徒信经文本稳定<br/>西方 · 约四至八世纪"]
+  A --> C["教理与主日诵读"]
+  A --> N["尼西亚补上同质与圣灵"]
+  A --> H["海德堡逐句讲解<br/>Q&amp;A 22-58"]
+  C --> L["今日：洗礼、教理、敬拜"]
+  N --> L
+  H --> L
+    </pre>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-time">
+  <h2 id="sec-timeline">🗓️ 两条时间线</h2>
+  <p>读信经最容易混的，是把「文献何时成形」和「信经所讲的事何时发生」叠成一条线。它们必须分开。</p>
+  <h3 id="sec-time-doc">甲、文献时间线：这几句话如何成形</h3>
+  <div class="table-wrap table-scroll">
+    <table>
+      <thead><tr><th>约略时期</th><th>发生了什么</th><th>与信经的关系</th></tr></thead>
+      <tbody>
+        <tr><td class="year">一世纪</td><td>使徒传讲、受洗、书信中的福音摘要</td><td>内容之源，尚无今日本文</td></tr>
+        <tr><td class="year">二世纪</td><td>信仰准则；罗马教会洗礼问答成形中</td><td>古罗马信经的母腹</td></tr>
+        <tr><td class="year">三至四世纪</td><td>异端逼教会把「子是谁」说精确</td><td>尼西亚（325）与君士坦丁堡（381）补强，不是取代洗礼短纲</td></tr>
+        <tr><td class="year">五至六世纪</td><td>西方流传「十二使徒各一句」的传说；亚他那修信经（拉丁，作者不详，传统归于亚他那修）在西方成形</td><td>传说解释权威来源；亚他那修信经护卫三一与二性</td></tr>
+        <tr><td class="year">八世纪前后</td><td>今日所见使徒信经全文在高卢—罗马传统中广泛固定</td><td>教学上称为通行文本</td></tr>
+        <tr><td class="year">1563 / 1561 / 1619</td><td>海德堡、比利时信条、多特</td><td>欧陆改革宗用信经作教理脊柱，并说明救恩如何被领受</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 id="sec-time-red">乙、救赎历史时间线：信经在讲哪些事</h3>
+  <div class="viz-strip" aria-label="救赎历史芯片">
+    <div class="viz-chip"><span class="vc-k">起初</span><span class="vc-v">父创造天地</span></div>
+    <div class="viz-chip vc-warn"><span class="vc-k">堕落</span><span class="vc-v">信经假定、未展开</span></div>
+    <div class="viz-chip vc-christ"><span class="vc-k">日期可考</span><span class="vc-v">彼拉多任内</span></div>
+    <div class="viz-chip vc-hub"><span class="vc-k">第三日</span><span class="vc-v">复活</span></div>
+    <div class="viz-chip vc-creed"><span class="vc-k">四十日后</span><span class="vc-v">升天坐席</span></div>
+    <div class="viz-chip vc-apply"><span class="vc-k">现今</span><span class="vc-v">圣灵·教会·赦罪</span></div>
+    <div class="viz-chip"><span class="vc-k">尚未</span><span class="vc-v">再来·身体复活·永生成全</span></div>
+  </div>
+  <p>信经几乎不叙述族长、出埃及、诸王——那些在「创造主」与「照圣经所说」的基督事件之间，由整本旧约承担。它把旧约的应许收束为<strong>一个名字、一个十字架、一个空墓</strong>。<span class="mark-hub">枢纽</span>是本丢彼拉多：福音钉在罗马总督的任期内，不能被收成神话。</p>
+  <div class="callout callout-cause">
+    <strong class="cot">前因</strong>
+    <p class="mb-0">若没有创世与堕落，十字架就没有必要；若没有亚伯拉罕之约与大卫之约，就没有「基督」这受膏君王的名号可承认。</p>
+  </div>
+  <div class="callout callout-effect">
+    <strong class="cot">后果</strong>
+    <p class="mb-0">升天与坐席之后，故事没有停在过去：圣灵招聚教会，赦罪现今施行，身体复活与永生仍在前方。信经因此是「已然—未济」。</p>
+  </div>
+</section>
+
+<section class="mod-oneline" id="s-story">
+  <h2 id="sec-story">🗺️ 故事线：信经是一幅小型救赎史</h2>
+  <p>不要画成交错的思维导图。下面用一条主干、七张卡片：从「我信」走到终末。箭头只向前，不交叉。</p>
+  <div class="storyline-mind card" role="region" aria-label="使徒信经故事线卡片">
+    <div class="sm-hub">
+      <div class="sm-hub-title">我信</div>
+      <div class="sm-hub-sub">三一真神的作为</div>
+    </div>
+    <div class="sm-stem" aria-hidden="true"></div>
+    <div class="sm-branches">
+      <article class="sm-branch sm-gold">
+        <h4 class="sm-branch-title">父·创造</h4>
+        <ul class="sm-kids">
+          <li>全能的父</li>
+          <li>天地的主</li>
+          <li>护理含在「全能」</li>
+        </ul>
+      </article>
+      <article class="sm-branch sm-blue">
+        <h4 class="sm-branch-title">子·是谁</h4>
+        <ul class="sm-kids">
+          <li>耶稣·基督</li>
+          <li>独生子·我主</li>
+          <li>先知祭司君王</li>
+        </ul>
+      </article>
+      <article class="sm-branch sm-rose">
+        <h4 class="sm-branch-title">子·降卑</h4>
+        <ul class="sm-kids">
+          <li>感孕与降生</li>
+          <li>彼拉多与十架</li>
+          <li>死、埋葬、阴间之苦</li>
+        </ul>
+      </article>
+      <article class="sm-branch sm-green">
+        <h4 class="sm-branch-title">子·升高</h4>
+        <ul class="sm-kids">
+          <li>第三日复活</li>
+          <li>升天坐在右边</li>
+          <li>再来审判</li>
+        </ul>
+      </article>
+      <article class="sm-branch sm-teal">
+        <h4 class="sm-branch-title">圣灵</h4>
+        <ul class="sm-kids">
+          <li>主，赐生命者</li>
+          <li>使人生信</li>
+          <li>住在教会中</li>
+        </ul>
+      </article>
+      <article class="sm-branch sm-purple">
+        <h4 class="sm-branch-title">教会与福分</h4>
+        <ul class="sm-kids">
+          <li>圣而公之教会</li>
+          <li>相通与赦罪</li>
+          <li>不是私人宗教</li>
+        </ul>
+      </article>
+      <article class="sm-branch sm-amber">
+        <h4 class="sm-branch-title">终末</h4>
+        <ul class="sm-kids">
+          <li>身体复活</li>
+          <li>永生</li>
+          <li>阿们：确乎如此</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+  <h3 id="sec-story-flow">降卑与升高（线性）</h3>
+  <div class="mermaid-wrap diagram-scroll">
+    <pre class="mermaid">
+flowchart TB
+  subgraph HUM["降卑"]
+    direction TB
+    H1["圣灵感孕<br/>童贞女所生"] --> H2["彼拉多手下受难"]
+    H2 --> H3["钉死 · 埋葬"]
+    H3 --> H4["降在阴间<br/>极苦与死权"]
+  end
+  subgraph EX["升高"]
+    direction TB
+    E1["第三日复活"] --> E2["升天"]
+    E2 --> E3["坐在父的右边"]
+    E3 --> E4["再来审判活人死人"]
+  end
+  H4 --> E1
+    </pre>
+  </div>
+  <p class="note">两种状态是同一位基督的历史，不是两位基督。亚他那修信经第 33–37 段：按神性与父同等，按人性卑于父；二性不相混乱，合成一个位格。</p>
+</section>
+
+<section class="mod-guide" id="s-bt">
+  <h2 id="sec-bt">📚 宏观：圣经神学</h2>
+  <p>圣经神学顺着正典的历史问：神如何逐步启示他的救赎。使徒信经是这条线的<strong>浓缩叙事</strong>，不是属性清单。它默默假定旧约，开口就进入新约的成全，再伸向尚未看见的结局。</p>
+  <h3 id="sec-bt-whole">整本圣经如何被这短纲握住</h3>
+  <div class="card-grid cols-2">
+    <div class="card card-gold">
+      <span class="card-tag">创造</span>
+      <h4>起点不是救赎技巧</h4>
+      <p class="mb-0">创 1–2：世界是神的，是好的。信经第一句拒绝「物质是邪恶的」与「另一位神创造身体」。后来的十字架若要救赎身体，身体必须本是创造主的作品。</p>
+    </div>
+    <div class="card card-gold">
+      <span class="card-tag">应许</span>
+      <h4>旧约是信经的前史</h4>
+      <p class="mb-0">创 3:15 的后裔、出埃及的救赎在先、大卫宝座、先知的仆人之歌（赛 53），都是「耶稣基督」这四个字里的旧约。信经不重述，却站在它们上面。</p>
+    </div>
+    <div class="card card-gold">
+      <span class="card-tag">成全</span>
+      <h4>福音书与林前 15</h4>
+      <p class="mb-0">路 24:44–47：摩西、先知、诗篇所记的，必须在基督身上应验——受害、复活、传悔改赦罪。林前 15:3–4 的「照圣经所说」就是信经中间那段的使徒版。</p>
+    </div>
+    <div class="card card-gold">
+      <span class="card-tag">施行与成全</span>
+      <h4>使徒行传到启示录</h4>
+      <p class="mb-0">升天之后，圣灵降临、教会被召、赦罪被传开（徒 2）。启示录 21–22 把「身体复活」与「永生」画成新天新地，而不是灵魂飘走、世界被丢弃。</p>
+    </div>
+  </div>
+  <h3 id="sec-bt-already">已然与未济</h3>
+  <p><span class="mark-core">重点</span>：信经前半多是已经发生的事实（创造、降生、十架、复活、升天），后半把「现在」与「尚未」放在一起。教会、相通、赦罪是圣灵<strong>正在</strong>作的工；再来、身体复活、永生的成全<strong>尚未</strong>临到。海德堡 Q&amp;A 58 说永生是「现在心里已开始」的喜乐，并在来世得着完全。把整本信经读成「全部已经结束」或「全部还在未来」，都会读歪。</p>
+  <div class="callout callout-christ">
+    <strong class="cot">基督是线索</strong>
+    <p class="mb-0"><span class="mark-christ">基督指向</span>父的创造以子为中保而立（约 1:3；西 1:16；尼西亚信经「万物藉他而造」）；圣灵不是另一套救恩，而是把人迁入子已完成的工作（约 16:14）。比利时信条第 10、11 条因此把子与灵都称为永恒的神，而不是父的两种工具。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-cov">
+  <h2 id="sec-cov">🤝 宏观：圣约神学</h2>
+  <p>欧陆改革宗把圣经读成约的历史：神以话语与应许束缚自己，又召人进入信实的关系。信经是<strong>约中子民的认信</strong>。</p>
+  <h3 id="sec-cov-two">行为之约与恩典之约</h3>
+  <div class="table-wrap table-scroll">
+    <table>
+      <thead><tr><th></th><th>行为之约</th><th>恩典之约</th></tr></thead>
+      <tbody>
+        <tr><td>代表</td><td>亚当</td><td>末后的亚当，耶稣基督</td></tr>
+        <tr><td>原则</td><td>顺从则得生命</td><td>因信领受基督已成就的义</td></tr>
+        <tr><td>信经里的位置</td><td>未被展开，却是「受难、受死」的前提：罪与咒诅是真的</td><td>信经的主干：独生子的降卑与升高</td></tr>
+        <tr><td>信条</td><td>海德堡 Q&amp;A 6–11；比利时信条第 14–15 条</td><td>海德堡 Q&amp;A 12–21；比利时信条第 17、20–23 条</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>海德堡 Q&amp;A 12–18 的逻辑是信经的「地下室」：神的公义要求满足；我们不能作这满足；必须有一位真神真人的中保。信经从「耶稣基督，上帝的独生子」走到「受死、复活」，就是在认这位中保。</p>
+  <h3 id="sec-cov-admin">历史施行，一个救恩</h3>
+  <p>挪亚、亚伯拉罕、摩西、大卫、新约，不是五种互相竞争的得救办法。亚伯拉罕「以信称义」（创 15:6；罗 4）与今日承认信经的人，同站在一位中保之下——旧约信徒仰望将要来的，新约信徒仰望已经来的。<span class="mark-promise">应许</span>的核心始终是：神要作我们的神，我们要作他的子民，罪得赦免，他的律法写在心上（耶 31:31–34）。信经「罪得赦免」就是这约的话被承认。</p>
+  <h3 id="sec-cov-map">约的情节 ↔ 信经句子</h3>
+  <div class="mermaid-wrap diagram-scroll">
+    <pre class="mermaid">
+flowchart TB
+  C["创造之主<br/>信经第1句"] --> F["亚当里的亏欠<br/>信经假定"]
+  F --> M["中保基督<br/>名号与二性"]
+  M --> X["十架满足<br/>受难至埋葬"]
+  X --> R["复活称义被证实<br/>罗4:25"]
+  R --> S["升天代求<br/>坐在右边"]
+  S --> P["圣灵施行<br/>教会 · 赦罪"]
+  P --> E["产业<br/>身体复活与永生"]
+    </pre>
+  </div>
+  <div class="card-grid cols-3">
+    <div class="card">
+      <span class="card-tag">父</span>
+      <h4>立约的主</h4>
+      <p class="mb-0">「全能的父」不只是创造者，也是在基督里收纳我们的父（约 20:17；罗 8:15）。比利时信条第 1、12–13 条：一位神、创造、护理。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">子</span>
+      <h4>约的中保</h4>
+      <p class="mb-0">他以神人二性代表我们守约、承担咒诅。多特第二项：他的死是替代与挽回，不是空泛的榜样。</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">灵</span>
+      <h4>约的施行者</h4>
+      <p class="mb-0">多特第三与第四项：堕落的人不能自救；圣灵有效地使人归信。教会是约的群体，不是俱乐部。</p>
+    </div>
+  </div>
+  <div class="callout callout-warn">
+    <strong class="cot">警戒</strong>
+    <p class="mb-0"><span class="mark-warn">警戒</span>不要把「我信」说成救恩的工价。真信心是空手接受（海德堡 Q&amp;A 60–61；比利时信条第 22–23 条）。多特第一项：拣选出于恩典，不出于预见的信心行为当作功劳。信心是领受的管道，不是可夸的砖块。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-tri">
+  <h2 id="sec-tri">🔺 宏观：三一结构</h2>
+  <p>海德堡 Q&amp;A 24：信经分为三部分——父上帝与我们的受造，子上帝与我们的救赎，圣灵上帝与我们的成圣。Q&amp;A 25 立刻补上：既分为三，为何只说一位神？因为圣经启示一位神、三个位格。这不是算术游戏。</p>
+  <div class="table-wrap table-scroll">
+    <table>
+      <thead><tr><th>部分</th><th>信经在说</th><th>护卫精度的信经</th><th>欧陆信条</th></tr></thead>
+      <tbody>
+        <tr><td>父</td><td>全能、创造天地</td><td>尼西亚第 1 条：一位父，全能者，创造可见与不可见的万有</td><td>比利时信条第 1、8–9、12–13 条；海德堡 Q&amp;A 26–28</td></tr>
+        <tr><td>子</td><td>独生子、主、历史中的降卑与升高</td><td>尼西亚论子「受生而非被造、与父同质」；亚他那修第 29–40 段</td><td>比利时信条第 10、18–21、26 条；海德堡 Q&amp;A 29–52；多特第二项</td></tr>
+        <tr><td>圣灵</td><td>圣灵，以及教会、相通、赦罪、复活、永生</td><td>尼西亚论圣灵是主、赐生命者，与父子同受敬拜；西方文本与改革宗认信：由父<strong>和子</strong>所出</td><td>比利时信条第 11、22–24、27–29、37 条；海德堡 Q&amp;A 53–58；多特第三/四、五项</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><span class="mark-hard">难点</span>：使徒信经没有写出「同质」（homoousios），也没有写出圣灵「由父和子所出」。这不是否定，而是体裁更短、时代更早。四世纪之后，教会用尼西亚信经与亚他那修信经第 1–28 段堵住「子是最高受造物」和「圣灵只是一种能力」。欧陆改革宗两者都接受：洗礼短纲给形状，尼西亚给精度。比利时信条第 9 条更指出：三一不是哲学装饰，而是我们在福音里所认识的神——父差子，灵使人生信。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">敬拜</strong>
+    <p class="mb-0"><span class="mark-apply">应用</span>诵读信经时，不要把后半只当作「教会论附录」。赦罪、复活、永生是圣灵把子的救赎赐下来，好叫父得着颂赞。荣耀归于三一神，不归于我们的宗教经验。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-mem">
+  <h2 id="sec-memory">🧠 速记十六钉</h2>
+  <p>先能按顺序说出口，再进入逐条。口诀只帮回忆，不能代替意思。</p>
+  <div class="motto">
+    <div class="motto-text">父能造，独子主；灵孕生，彼拉苦；钉死埋，阴间苦；三日活，升坐右；再来审；圣灵主；圣公会，圣徒通；罪赦免，身复活；享永生。阿们。</div>
+    <div class="motto-hint">十六钉：父 / 子 / 孕 / 苦 / 死 / 阴 / 活 / 升 / 审 / 灵 / 会 / 通 / 赦 / 身 / 永 / 阿们</div>
+  </div>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">1 父</span><h4>父能造天地</h4><p class="mb-0">钩子：先问「谁是父」，再问「世界是谁的」。</p></div>
+    <div class="card"><span class="card-tag">2 子</span><h4>独子是我主</h4><p class="mb-0">钩子：四个称呼——耶稣、基督、独生子、主。</p></div>
+    <div class="card"><span class="card-tag">3 孕</span><h4>灵孕童女生</h4><p class="mb-0">钩子：来源是圣灵，母亲是童贞女，所以他是真人又不是出于亚当的罪债血统之首。</p></div>
+    <div class="card"><span class="card-tag">4 苦</span><h4>彼拉多下苦</h4><p class="mb-0">钩子：一个罗马人名 = 真历史。</p></div>
+    <div class="card"><span class="card-tag">5 死</span><h4>钉死并埋葬</h4><p class="mb-0">钩子：三步都要说全——刑具、死亡、坟墓。少一步就会被幻影说钻空。</p></div>
+    <div class="card"><span class="card-tag">6 阴</span><h4>阴间之极苦</h4><p class="mb-0">钩子：海德堡不讲「第二次下地狱旅游」，讲十字架上地狱般的痛苦，并他真的死了。</p></div>
+    <div class="card"><span class="card-tag">7 活</span><h4>三日复了活</h4><p class="mb-0">钩子：第三天，身体，公开。</p></div>
+    <div class="card"><span class="card-tag">8 升</span><h4>升天坐父右</h4><p class="mb-0">钩子：离开不是抛弃；右边是权柄与代求。</p></div>
+    <div class="card"><span class="card-tag">9 审</span><h4>再来审活死</h4><p class="mb-0">钩子：同一位救主就是审判者。安慰与警戒同在一句。</p></div>
+    <div class="card"><span class="card-tag">10 灵</span><h4>圣灵主施恩</h4><p class="mb-0">钩子：圣灵是位格，不是气氛。</p></div>
+    <div class="card"><span class="card-tag">11 会</span><h4>圣公教会一</h4><p class="mb-0">钩子：「公」是大公、普遍，不是「罗马」的专名。</p></div>
+    <div class="card"><span class="card-tag">12 通</span><h4>圣徒相交通</h4><p class="mb-0">钩子：分享基督与彼此的恩赐，不是拜圣人。</p></div>
+    <div class="card"><span class="card-tag">13 赦</span><h4>罪得真赦免</h4><p class="mb-0">钩子：赦免在基督的血，藉信领受，在教会中被宣讲。</p></div>
+    <div class="card"><span class="card-tag">14 身</span><h4>身体必复活</h4><p class="mb-0">钩子：是这个身体得赎，不是只剩灵魂。</p></div>
+    <div class="card"><span class="card-tag">15 永</span><h4>永生直到永远</h4><p class="mb-0">钩子：现在尝，来世饱。</p></div>
+    <div class="card"><span class="card-tag">16 阿们</span><h4>阿们确乎真</h4><p class="mb-0">钩子：不是礼貌收尾，是「这话确实」。</p></div>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-arts">
+  <h2 id="sec-arts">✝️ 逐条详解</h2>
+  <p>以下每条都先放回宏观：这一句在整幅救赎史的哪里，然后才解释字句。引用信条只标号。</p>
+</section>
+
+<section class="mod-guide" id="s-a1">
+  <h2 id="sec-a1">01 我信上帝，全能的父，创造天地的主</h2>
+  <p><span class="mark-core">重点</span>信仰的第一句不是「我信我自己的感觉」，而是承认一位<strong>全能的父</strong>，并且他是<strong>天地的创造主</strong>。创造与父爱不能拆开：若他只是父却不掌权，安慰是空的；若他只是全能却不是父，良心只有恐惧。</p>
+  <h3 id="sec-a1-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>「上帝」：独一活神，不是众神中的一位。「全能」：他的能力与旨意相符，没有另一股命运在他之上（诗 115:3；赛 46:10）。「父」：在永恒里他是独生子的父；在恩典里，他因基督成为信徒的父（约 20:17；弗 1:3–6）。「创造天地的主」：可见与不可见的万有都出于他，世界不是自然溢出，也不是恶神的作品。</p>
+  <p><strong>前因。</strong>圣经开篇就是创造（创 1:1）。以色列的认信先是「耶和华我们的神是独一的主」（申 6:4），再在被掳与帝国之间坚持：造天地的才是真神（赛 40–45；耶 10）。新约把这认信放进主祷文的第一句「我们在天上的父」（太 6:9）。</p>
+  <p><strong>后果。</strong>既是创造主，身体、工作、政权、科学所研究的世界都在他手下，不是救赎之外的废料。既是父，祷告就有地址。既是全能，苦难中仍可说「没有他的旨意，一根头发也不掉下」——这是海德堡 Q&amp;A 1 与 Q&amp;A 27–28 的安慰，不是对痛苦装没看见。</p>
+  <h3 id="sec-a1-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">历史</span><h4>针对谁</h4><p class="mb-0">早期信仰准则针对把旧约的神说成低等创造者、把物质当监狱的二元论。创造主与救赎主是同一位。</p></div>
+    <div class="card"><span class="card-tag">释经</span><h4>经文重心</h4><p class="mb-0">创 1–2；诗 33、104、124；徒 17:24–28；西 1:16；启 4:11。父的名在太 11:25–27 与约 5:19–26 与子连在一起。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>约的舞台</h4><p class="mb-0">创造是立约的空间。人按神的形像受造，被置于顺服的关系中（比利时信条第 14 条）。堕落没有废除「世界是他的」，只使人成为亏欠的受造物。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>两种误用</h4><p class="mb-0"><span class="mark-warn">警戒</span>用「全能」压扁人的哀哭，或用「父」否认神的圣洁与审判。真父是圣洁的父。</p></div>
+  </div>
+  <h3 id="sec-a1-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 26（创造与父的护理性供应）、Q&amp;A 27–28（全能与护理：不是命运，也不是偶然）。比利时信条第 1 条（独一神的属性）、第 8–9 条（三一中的父）、第 12–13 条（创造与护理）。尼西亚信经开篇：一位上帝，全能的父，天地并一切可见不可见之物的创造者。亚他那修信经第 3–6、15–20 段：父是神，却不是三位神；父非受生。多特第一项第 1 条从「人都在亚当里犯了罪」起笔，预设这位创造主也是审判者与施恩者。</p>
+  <p><span class="mark-hard">难点</span>：「父」不是说神性里有性别，也不是说父比子更神。子与灵同为永恒的神。护理也不是叫人懒惰：海德堡 Q&amp;A 28 的结论是忍耐、感恩，并在万事中信靠，而不是拒绝作工。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>父能造</strong>——父、能、造三个字缺一不可。<span class="mark-apply">应用</span>本周把焦虑写成一句祷告：「创造我的父，这件事也在你手下。」然后仍去尽本分。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a2">
+  <h2 id="sec-a2">02 我信我主耶稣基督，上帝的独生子</h2>
+  <p>信经把救赎的全部重量放在一个名字上。海德堡用四个问答拆这句的称号：耶稣、基督、独生子、我们的主（Q&amp;A 29–34）。称号不是礼貌，是职分与位格。</p>
+  <h3 id="sec-a2-what">说什么，前因与后果</h3>
+  <p><strong>耶稣</strong>：希伯来含义是「耶和华拯救」。太 1:21：他要把自己的百姓从罪恶里救出来。所以他不是众多导师中较成功的一位。海德堡 Q&amp;A 29–30：除他以外别无拯救；把救恩分给圣徒、自己或别的名，就是不承认这名字。</p>
+  <p><strong>基督</strong>：受膏者。旧约先知、祭司、君王受膏；耶稣在这三职上作那唯一的受膏者（诗 2；赛 61:1；路 4:18；徒 2:36）。海德堡 Q&amp;A 31：他是我们的大先知、唯一大祭司、永远的王。Q&amp;A 32：基督徒分享他的受膏，不是变成小救主，而是以信心承认他的名、把自己献上、与罪争战。</p>
+  <p><strong>独生子</strong>：不是收养名单上的第一名，而是永恒中由父所生、与父同质的子（约 1:1、14、18；3:16；西 1:15–20）。我们是恩典里被收纳的儿女；他是本体的儿子。海德堡 Q&amp;A 33。</p>
+  <p><strong>我们的主</strong>：他用宝血买赎我们，脱离罪与魔鬼的权势，使我们归属他（林前 6:19–20；彼前 1:18–19）。海德堡 Q&amp;A 34。承认「我的主」就是不再以自己为主（罗 10:9；腓 2:9–11）。</p>
+  <p><strong>前因。</strong>「基督」若没有旧约的受膏制度与大卫之约，就只是一个希腊头衔。独生子的认信若没有约 1 章与提前 3:16 一类的福音告白，就会滑进「伟大的人」。</p>
+  <p><strong>后果。</strong>后面所有降卑与升高的句子，主语都是这一位。若这一句错了，十字架只是悲剧，复活只是奇闻。</p>
+  <h3 id="sec-a2-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">系统</span><h4>一位格，两性将在下条展开</h4><p class="mb-0">这里先钉住：他是神的儿子，又是我们的主。神性在「独生子」，权柄在「主」，历史的人在「耶稣」。</p></div>
+    <div class="card"><span class="card-tag">护教</span><h4>常见偏路</h4><p class="mb-0"><span class="mark-warn">警戒</span>阿里乌式「最高受造物」；今日常见的「只是道德楷模」。尼西亚信经用「受生而非被造、与父同质」堵住前者。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>中保的名</h4><p class="mb-0">比利时信条第 17–20 条：神在伊甸园应许、在时候满足差下他的独生子，好叫怜悯与公义在同一位身上相遇。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>「我的」</h4><p class="mb-0">信经说「我主」，海德堡说「我们的主」。个人信心与教会认信不对立。没有「我们」，「我的」容易变成私人耶稣。</p></div>
+  </div>
+  <h3 id="sec-a2-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 29–34。比利时信条第 10 条（基督是真神、永恒的子）、第 21 条（他是我们的大祭司与中保，细节在受难条展开）。尼西亚信经论子的条款：独生、在万世以前为父所生、出自神而为神、出自光而为光、出自真神而为真神、受生而非被造、与父同质、万物是藉着他造的。亚他那修信经第 29–32 段：必须正确相信道成肉身；基督是神，也是人；按神性与父同等。多特第二项第 1–2 条：神差他的独生子，是因为人不能自救，且神的公义必须满足。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>四个称呼不减配</strong>——耶稣（拯救）、基督（三职）、独生（真神）、主（买赎）。<span class="mark-apply">应用</span>读福音书时在页边标这四个字，看叙事如何把称号活出来，而不是只收集奇迹。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a3">
+  <h2 id="sec-a3">03 因圣灵感孕，由童贞女马利亚所生</h2>
+  <p>降卑从成孕开始，不是从十字架才开始。永恒的子取了真实的人性，却不是藉着普通的男系生育进入亚当那败坏的源头之下作另一个亏欠者。</p>
+  <h3 id="sec-a3-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>路 1:35：圣灵要临到马利亚，因此所要生的是圣者，称为神的儿子。太 1:18–23 应验赛 7:14。加 4:4：时候满足，神差遣他的儿子，为女子所生，且生在律法以下。「童贞女所生」保证：他是真女人的真儿子（反对幻影，反对他只是看起来像人）；「圣灵感孕」保证：这成孕是神的作为，他被称为圣（路 1:35；海德堡 Q&amp;A 35–36）。</p>
+  <p><strong>前因。</strong>女人的后裔（创 3:15）与大卫的子孙（撒下 7；太 1 族谱；路 3）必须在历史中出生。若他不取人性，就不能代表我们顺从，也不能死。比利时信条第 18 条：子取了真人性，有身体与理性的灵魂。</p>
+  <p><strong>后果。</strong>马利亚是受尊荣的仆人（路 1:38、46–55），不是救赎的来源。教会称她为童贞女马利亚，是为了基督的身份，不是为了把敬拜从子转到母亲。接下来的受难才有一个真可死的人，并且这人就是神的儿子（比利时信条第 19 条：二性不分、不混、不改，一个位格）。</p>
+  <h3 id="sec-a3-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">释经</span><h4>赛 7:14</h4><p class="mb-0">在亚哈斯当时有近处的兆头层面，马太依圣灵把「童女怀孕」的应许读到基督身上。改革宗不把近史意义与弥赛亚成全对立起来，而是看预表与正典的汇合。</p></div>
+    <div class="card"><span class="card-tag">系统</span><h4>无罪的人性</h4><p class="mb-0">海德堡 Q&amp;A 35–36：他以人性作我们的中保，又藉圣灵成孕，使罪的败坏不落在他身上，好洗净我们的罪。这不是说马利亚本身无罪无染。</p></div>
+    <div class="card"><span class="card-tag">历史</span><h4>古代边界</h4><p class="mb-0">幻影说否认真身体；嗣子论否认永恒的子在成孕时已是神的儿子。信经两半句一起反驳两边。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>代表从哪里来</h4><p class="mb-0">末后的亚当不是亚当族谱里又一个失败者。他进入大卫之约的应许，却以圣灵的能力成孕，好作新约的头。</p></div>
+  </div>
+  <h3 id="sec-a3-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 35–36。比利时信条第 18–19 条。尼西亚信经：为了我们世人与我们的得救，从天降临，因圣灵由童贞女马利亚成肉身而为人。亚他那修信经第 31–36 段：由母的本质在世为人；完全的神、完全的人；不是神性变成肉体，而是取了人性进入神；一个基督。</p>
+  <p><span class="mark-hard">难点</span>：不要把「感孕」讲成圣灵与马利亚的婚姻神话。圣灵是创造与成圣的能力临到，子取人性，父差遣——三一的工作不可分割，却有次序。也不要把童贞女生子写成生物学猎奇而忘记目的：中保。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>来源圣灵，母亲童贞，目的中保</strong>。<span class="mark-apply">应用</span>圣诞节讲道若只停在温情，补上比利时信条第 18 条的问题：他若不是真人，怎能站在我们的位置？</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a4">
+  <h2 id="sec-a4">04 在本丢彼拉多手下受难</h2>
+  <p>信经在这里突然出现一个罗马官员的名字。救赎不是发生在寓言时间，而是发生在可被书写的政权之下。</p>
+  <h3 id="sec-a4-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>本丢彼拉多是第一世纪犹大巡抚。耶稣在他面前受审、被判、被交去钉十字架（太 27；可 15；路 23；约 18–19）。提前 6:13 甚至在劝勉里提到「在本丢彼拉多面前作过美好见证的基督耶稣」。信经说的「受难」包括审判的羞辱、身体的痛苦，以及——更重的——神对罪的忿怒（海德堡 Q&amp;A 37）。</p>
+  <p><strong>前因。</strong>先知已说义人要被列在罪犯之中，却是因我百姓的罪过（赛 53）。诗 22 的受辱、被围，在福音书的叙事里成为可见的历史。彼拉多的名字把「照圣经所说」钉在罗马纪年里。</p>
+  <p><strong>后果。</strong>基督徒不能把信仰收成纯内心哲学。福音可被历史查问。同时，彼拉多的权柄不是最终权柄：约 19:11，若不是从上头赐下，他毫无权柄。政治暴力被承认，却被放在神的旨意之下——不是赞美不公，而是承认神使用罪人的手成就救赎（徒 2:23；4:27–28）。</p>
+  <h3 id="sec-a4-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">历史</span><h4>为何点名</h4><p class="mb-0"><span class="mark-hub">枢纽</span>古代信经点名彼拉多，是为了反对「基督的受苦只是天上的象征」。诺斯替倾向最讨厌具体的罗马十字架。</p></div>
+    <div class="card"><span class="card-tag">释经</span><h4>无辜者</h4><p class="mb-0">路 23 反复出现「我查不出他有什么罪」。海德堡 Q&amp;A 38：他在法官手下被定为有罪，是为除去我们本当受的严厉审判。无辜被判，罪人得释，这是替代的法庭画面。</p></div>
+    <div class="card"><span class="card-tag">系统</span><h4>受苦的是谁</h4><p class="mb-0">亚他那修信经第 33、38 段：按人性他受苦。神性不改变、不受苦，但受苦的位格是神的儿子。不是「人性单独在受苦、神站在旁边观看」的分裂。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>不义的法庭</h4><p class="mb-0"><span class="mark-apply">应用</span>信徒遭遇不公时，不是被承诺立刻翻案，而是知道中保也曾站在不义的判决之下，并且那判决被神用来成就公义的救赎。</p></div>
+  </div>
+  <h3 id="sec-a4-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 37–39（受难的意义；为何点名彼拉多——使受苦成为具体历史，并显明他虽无辜却被判刑）。比利时信条第 20–21 条开始把公义与怜悯放在基督的受苦上。尼西亚信经：在本丢彼拉多手下为我们钉十字架，被害，埋葬。亚他那修信经第 38 段：他为我们的得救受难。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>一个罗马人名 = 真历史 + 真替代</strong>。<span class="mark-apply">应用</span>向慕道友讲福音时，先说「大约在彼拉多作巡抚的那些年」，再解释神学，免得信仰听起来像不落地的神话。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a5">
+  <h2 id="sec-a5">05 被钉于十字架，受死，埋葬</h2>
+  <p>三件事必须一起说：刑具、断气、坟墓。少掉任何一件，古代或今天都有办法把福音说轻。</p>
+  <h3 id="sec-a5-what">说什么，前因与后果</h3>
+  <p><strong>钉十字架。</strong>申 21:23：被挂的人是神所咒诅的。加 3:13：基督既为我们成了咒诅，就赎出我们脱离律法的咒诅。十字架不是罗马人偶然选的最痛方式而已，而是咒诅的记号被神用来承担咒诅。林前 1:18–25：这软弱是神的能力。</p>
+  <p><strong>受死。</strong>他真的死了。约 19:30–34；可 15:37–39。来 2:9、14–15：他为人人尝了死味，藉着死败坏那掌死权的。死不是昏厥。罗 5:6–8：基督在我们还作罪人的时候为我们死。多特第二项强调这死是<strong>替代性的满足</strong>，不是仅仅感动人向善的受难剧。</p>
+  <p><strong>埋葬。</strong>林前 15:3–4 把埋葬写进使徒所传的首要之事。赛 53:9：人还使他的坟墓与恶人同埋。埋葬证明死亡完成，也预告第三日的空墓不是「他根本没死」。海德堡 Q&amp;A 41：他的埋葬见证他确实死了，并且除去我们在死亡里的恐惧——他已经走在前面，使坟墓不再是绝路。</p>
+  <p><strong>前因。</strong>若无罪可承担，十字架就是误会。海德堡 Q&amp;A 10–12：神的忿怒对罪是真实的，必须有满足。比利时信条第 20–21 条：神的公义与怜悯在基督献上自己时一同显明。</p>
+  <p><strong>后果。</strong>称义有了根据（罗 3:24–26）；死亡对信徒失去最终的毒钩（林前 15:55–57；海德堡 Q&amp;A 42）；洗礼与主餐所指向的，正是这死（罗 6:3–4；林前 11:26）。多特第二项第 8 条：他的死有无限的价值，因其位格；其拯救的功效按神的旨意临到选民，使他们确实得着信心与拯救——不是说他的血本身不够，而是说神定意这救赎有效地成就在约的子民身上。</p>
+  <h3 id="sec-a5-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">圣经神学</span><h4>祭与仆人之歌</h4><p class="mb-0">利未记的血、出埃及的羔羊、赛 53 的仆人，在十架上汇合。信经不解释祭的制度，却站在「一次献上」的结果上（来 9:26–28；10:10–14）。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>咒诅与新约的血</h4><p class="mb-0">加 3:13–14 把咒诅与亚伯拉罕的福连起来。路 22:20：杯是用血立的新约。没有死，就没有这约的血。</p></div>
+    <div class="card"><span class="card-tag">护教</span><h4>不要把十字架说成别的</h4><p class="mb-0"><span class="mark-warn">警戒</span>只谈榜样、只谈社会悲剧、或只谈击败魔鬼而不谈对神公义的满足，都短于信经与多特第二项。榜样与得胜是真的，但核心是代替。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>坟墓</h4><p class="mb-0"><span class="mark-apply">应用</span>安葬礼仪可以诚实地说「死是仇敌」，同时说「基督已葬在这里之前」。安慰不是否认眼泪。</p></div>
+  </div>
+  <h3 id="sec-a5-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 40–43。比利时信条第 20–21 条。尼西亚信经：为我们钉十字架，被害，埋葬。亚他那修信经第 38 段：受难、降阴间、第三日复活——死与埋葬是受难的完成。多特第二项全文，尤其第 2–4、8 条：满足、替代，以及这死的价值与功效。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>三步不减——钉、死、埋</strong>。<span class="mark-apply">应用</span>领主餐时按林前 11:26 把饼杯连到这三步，而不是连到自己的情绪高潮。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a6">
+  <h2 id="sec-a6">06 降在阴间</h2>
+  <p>这是整篇信经里最需要慢读的一句。<span class="mark-hard">难点</span>不在于经文太少，而在于后世用同一句装进了不同的故事。</p>
+  <h3 id="sec-a6-what">说什么，前因与后果</h3>
+  <p><strong>欧陆改革宗所说的。</strong>海德堡 Q&amp;A 44：我信基督降在阴间，是要在极大的试探中确信——我主耶稣基督藉着不可言说的痛苦、疼痛、惊恐，尤其是在十字架上所经历的地狱般的 agony，已经救我脱离地狱的痛苦与折磨。重心在<strong>他代替我们承受了地狱式的弃绝与苦痛</strong>，顶点是十架上「我的神，我的神，为什么离弃我」（太 27:46；诗 22），以及赛 53:10「耶和华定意将他压伤」。</p>
+  <p><strong>前因。</strong>埋葬已经说过身体下了坟墓。若「降阴间」只是「埋葬」的同义反复，信经就在重复。西方信经在「埋葬」之外仍保留此句，是要说出死亡的深度：不只是心脏停止，而是中保进入罪所当受的极处——与神的忿怒面对面——好叫我们不必进入那极处。</p>
+  <p><strong>后果。</strong>信徒在绝望里不是被叫去想象基督在某个洞穴里另有一场战役，而是被带到十字架：那里的苦已经足够，救赎已经完成（约 19:30）。它也排除「基督死后还要在阴间补课才算救赎完成」的想法。</p>
+  <h3 id="sec-a6-ang">多个角度：把几种讲法分开</h3>
+  <div class="table-wrap table-scroll">
+    <table>
+      <thead><tr><th>讲法</th><th>大意</th><th>欧陆改革宗的态度</th></tr></thead>
+      <tbody>
+        <tr><td>地狱之苦（海德堡）</td><td>十字架上灵魂与身体的极苦，承担咒诅</td><td><span class="mark-core">重点</span>教理正统解释，Q&amp;A 44</td></tr>
+        <tr><td>死后下到「义人等候之处」救出旧约圣徒</td><td>中世纪常见的「劫掠阴间」故事</td><td>不是信经所必须，也容易把救赎说成十字架之后的第二舞台</td></tr>
+        <tr><td>只是「下到坟墓 / 死人之地」</td><td>有些传统用旧约「阴间」＝坟墓、死的境界</td><td>真死、真葬已经在上一句。可承认他处在死的权下直到复活，但不可因此取消 Q&amp;A 44 的极苦</td></tr>
+        <tr><td>向死人提供死后悔改的第二次机会</td><td>误用彼前 3:19</td><td><span class="mark-warn">警戒</span>圣经没有死后信福音的应许（来 9:27）。彼前 3:18–22 在改革宗释经中常被理解为：基督藉圣灵曾藉挪亚向当时的人宣讲，或在复活里向被囚的灵宣判得胜；不是阴间布道会</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>加尔文在《基督教要义》2.16.8–12 与海德堡同向：此句说出基督承受了神的忿怒，是我们救赎不可少的部分。身体在坟墓里、灵魂没有留在死亡里朽坏（徒 2:27、31 引用诗 16），与「他在十架上经历地狱般的弃绝」是两件要分清的事：前者是死后的状态，后者是赎罪的深度。教学上以海德堡为准，避免把诗 16 读成「他下到刑罚之地继续受苦」。</p>
+  <h3 id="sec-a6-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 44 是主要坐标。比利时信条第 21 条强调一次献上与十架上的牺牲，与此相符。亚他那修信经第 38 段沿用「降在阴间」的句子，却未展开定义；解释权交给更晚的教理问答，而不是交给民间传说。尼西亚信经通行文本没有单独的「降阴间」句，它用「被害，埋葬」与「第三日复活」包住死亡，这提醒我们：教义的核心是真死与真复活，阴间句的功能是把这死的<strong>深度</strong>说出来。</p>
+  <div class="callout callout-hope">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>阴间句 = 十架之极苦，不是死后第二幕</strong>。<span class="mark-apply">应用</span>人在罪疚里觉得「神已经丢下我」时，把太 27:46 读给他们：被丢弃的呼喊已经由中保喊过了。安慰是替代，不是否认他们的感觉。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a7">
+  <h2 id="sec-a7">07 第三天从死人中复活</h2>
+  <p>降卑在坟墓里到底；升高从第三日开始。复活不是精神永存，而是被钉死、被埋葬的那一位，第三天以身体活过来。</p>
+  <h3 id="sec-a7-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>林前 15:3–8：照圣经所说，第三天复活，并且被看见。路 24:36–43：他让门徒摸他，并在他们面前吃东西，显明不是鬼魂。徒 2:24：神把死的痛苦解释了，因为他原不能被死拘禁。罗 4:25：他被交给人是为我们的过犯；复活是为叫我们称义——父公开宣告：这祭被悦纳，中保的义成立。</p>
+  <p><strong>前因。</strong>若没有真死，复活没有内容；若没有旧约「照圣经所说」（诗 16:10；何 6:2 的第三日模式；拿 1–2 被耶稣用作兆头，太 12:40；赛 53:10–12 他必看见后裔），第三日只是惊奇。信经把复活放在埋葬与阴间句之后，是要人按顺序信。</p>
+  <p><strong>后果。</strong>海德堡 Q&amp;A 45 给出三重益处：他胜过死亡，使我们分享他藉死为我们获得的义；他的能力如今使我们复活得着新生命（罗 6:4–11）；他复活是我们将来身体复活的确实保证（林前 15:20，初熟的果子）。多特第五项：选民的坚忍站在这位活着的中保身上，不是站在自己的握力上。</p>
+  <h3 id="sec-a7-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">历史</span><h4>空墓与见证</h4><p class="mb-0"><span class="mark-history">历史</span>福音书的妇女见证、门徒从惧怕转为公开宣讲、教会在七日的第一日聚集，都是复活叙事的历史后果。信仰不是「空墓证明了一切」，而是空墓与显现、使徒宣讲、圣经应许放在一起。</p></div>
+    <div class="card"><span class="card-tag">系统</span><h4>同一身体</h4><p class="mb-0">复活的身体有连续性，也有荣耀的改变（路 24 的伤痕；林前 15:42–49）。否认身体复活，就回到信经所反对的希利尼路线。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>约的元首活着</h4><p class="mb-0">亚当把死带进约的关系；末后亚当把生命带进来（罗 5:12–21；林前 15:22、45）。我们的称义与成圣都挂在这位活的代表身上。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>主日</h4><p class="mb-0"><span class="mark-apply">应用</span>主日敬拜是复活的节奏，不是一周里剩下的空档。诵读信经到这一句时，声音应当像宣告，不像道歉。</p></div>
+  </div>
+  <h3 id="sec-a7-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 45。比利时信条第 19–20 条在基督位格与工作里假定他从死里复活并升天（第 26 条接着讲代求）。尼西亚信经：按圣经所说第三日复活。亚他那修信经第 38 段。多特第五项第 6–8 条：神按他不变的旨意，藉基督的功绩与代求保守选民，圣灵更新他们，使他们不至于从恩典的地位中完全堕落。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>第三天 · 真身体 · 称义被证实 · 新生命 · 我们复活的初熟果</strong>。<span class="mark-apply">应用</span>用林前 15 读完整章，不要只停留在婚礼常用的几节，看保罗如何把复活连到「你们的劳苦不是徒然」。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a8">
+  <h2 id="sec-a8">08 升天，坐在全能父上帝的右边</h2>
+  <p>升高的第二步与第三步常被读成「耶稣离开了，我们只好自己努力」。海德堡恰好反过来：升天与坐席是为了我们。</p>
+  <h3 id="sec-a8-what">说什么，前因与后果</h3>
+  <p><strong>升天。</strong>路 24:50–51；徒 1:9–11：他在门徒眼前被接上升，并且还要怎样去，也要怎样回来。弗 4:8–10：他升上高天，为要把恩赐赏给人。这不是灵魂逃走，而是复活的人子带着人性进入荣耀。</p>
+  <p><strong>坐在右边。</strong>诗 110:1 是新约引用最多的旧约句子之一：坐在我右边，等我使你仇敌作你的脚凳。弗 1:20–23；来 1:3；8:1。右边不是地理角落里的一张椅子，而是<strong>权柄、尊荣、治理</strong>的位置。海德堡 Q&amp;A 50–51：他在那里统管万有，特别作教会的头；父藉他把万有交在他手里。他又不断为我们就近父（来 7:25）。比利时信条第 26 条把代求从「圣人转达」里救出来：唯一的中保在父面前。</p>
+  <p><strong>前因。</strong>若他仍以降卑的样式留在加利利，圣灵的降临与万国宣教的阶段就不会按约 16:7 的逻辑展开（「我去是与你们有益的」）。升天是工作完成之后就职，不是失败后撤退。</p>
+  <p><strong>后果。</strong>海德堡 Q&amp;A 46–49 的安慰可以记成四样：我们的元首在父面前作担保；我们的肉体在天上，是我们将来同在的凭据；他差下圣灵；我们被引向上面的事，而不是偶像。坐席也意味着：教会的主现在掌权，患难不是世界脱离了控制。</p>
+  <h3 id="sec-a8-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">释经</span><h4>诗 110</h4><p class="mb-0">君王与麦基洗德等次的祭司合一。坐席同时是王权与祭司职，对应前面「基督」的受膏。</p></div>
+    <div class="card"><span class="card-tag">难点</span><h4>他在哪里</h4><p class="mb-0"><span class="mark-hard">难点</span>基督的人性不是无所不在的物质。按神性他无处不在；按人性他在天上。圣餐里我们是藉圣灵升到天上与他相交，不是他把身体变成饼（海德堡论圣餐的方向，Q&amp;A 76–80，与本句相配）。这里只标方向，不展开圣餐全文。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>大卫的主</h4><p class="mb-0">大卫之约的宝座被提升到父的右边。以色列所等候的王，如今是教会与万有的头。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>祷告的地址</h4><p class="mb-0"><span class="mark-apply">应用</span>祷告奉耶稣的名，是因为有一位已经在右边的祭司，不是因为这句话是咒语。</p></div>
+  </div>
+  <h3 id="sec-a8-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 46–51。比利时信条第 26 条。尼西亚信经：升天，坐在父的右边。亚他那修信经第 39 段。多特第二项第 3 条与第五项：他的代求与保守相连。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>升天不是缺席，右边不是家具</strong>——担保、凭据、圣灵、掌权、代求。<span class="mark-apply">应用</span>焦虑政治或教会新闻时，先读诗 110:1，再决定本分，而不是先假设基督不在座位上。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a9">
+  <h2 id="sec-a9">09 将来必从那里降临，审判活人、死人</h2>
+  <p>升高的最后一步还在将来。救主与审判者是同一位。信经不许我们把耶稣留在「温和的过去」，也不许我们用审判吓唬人却不提他就是那位曾受审判的中保。</p>
+  <h3 id="sec-a9-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>徒 1:11：你们见他怎样往天上去，他还要怎样来。徒 17:31：神已经定了日子，要藉他所设立的人按公义审判天下，并且叫他从死里复活，给万人作可信的凭据。太 25:31–46；启 22:12。活人与死人：届时存留的与已经死了的都要在他面前。</p>
+  <p><strong>前因。</strong>诗 110 的坐席有一个「等到」。权柄若永不公开施行，历史就没有终局，不义就没有最后的回答。十字架若是神对罪的判决已经落在替代者身上，再来就是这判决的公开执行与国度的成全。</p>
+  <p><strong>后果。</strong>海德堡 Q&amp;A 52 的安慰极其具体：在一切患难与逼迫中，我举目等候那位从前在神的审判台前为我献上自己、除去我一切咒诅的审判者；他必将我和一切属他的人接入天上的喜乐与荣耀，却把仇敌丢在永远的定罪里。审判因此对信徒首先是<strong>解脱</strong>，不是俄罗斯轮盘。对不信与逼迫教会的，却是真实的忿怒（帖后 1:6–10）。比利时信条第 37 条：全部旧约新约都指向这最后审判；那时书卷展开，人要为自己的行为交账，信徒的行为被看见是信心的果子，不是称义的功德。</p>
+  <h3 id="sec-a9-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">圣经神学</span><h4>已然的判决，未济的显现</h4><p class="mb-0">约 5:24：信的人不出审判，是已经出死入生。这与末后仍有公开审判并不矛盾。一个是现今在基督里的判决，一个是历史终点的显明。</p></div>
+    <div class="card"><span class="card-tag">难点</span><h4>日期与戏剧</h4><p class="mb-0"><span class="mark-hard">难点</span>信经不给时间表，不描写小说情节。可 13:32 禁止算命式末世。改革宗教理把精力放在警醒、安慰与圣洁，而不是图表。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>约的结局</h4><p class="mb-0">祝福与咒诅在末日不再混合。新天新地是约的产业被交割；拒绝中保的人承担自己的罪债。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>两个听众</h4><p class="mb-0"><span class="mark-apply">应用</span>对痛悔的人先说 Q&amp;A 52 的安慰；对硬心把信仰当玩物的人不要删掉定罪的句子。同一句信经，两种忠心的讲法。</p></div>
+  </div>
+  <h3 id="sec-a9-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 52。比利时信条第 37 条。尼西亚信经：将来必在荣耀中再来，审判活人死人，他的国没有穷尽。亚他那修信经第 40–44 段：他要来审判；众人带着身体复活并交账；行善的进入永生，作恶的进入永火。这里的「行善 / 作恶」必须用比利时信条第 23–24 条与海德堡 Q&amp;A 62–64 来读：善行是真信心必有的果子，不是补上基督功德的缺口。多特第一项与第五项拒绝「人可以轻慢恩典仍自以为稳妥」。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>从那里来——同一方向；审活人也审死人——没有缺席</strong>。<span class="mark-apply">应用</span>本周为主受屈时，把申冤交给再来的审判者（罗 12:19），同时在今天止住自己的报复。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a10">
+  <h2 id="sec-a10">10 我信圣灵</h2>
+  <p>信经对圣灵只用极短的一句，随后把教会、相通、赦罪、复活、永生都挂在他的工作上。短，不是因为圣灵次等，而是因为使徒信经的体裁把「他是谁」留给了更精密的尼西亚信经，把「他作什么」写在后面几句。</p>
+  <h3 id="sec-a10-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>圣灵是主，是赐生命的神，不是父与子的一种情绪。徒 5:3–4 把欺骗圣灵称为欺骗神。林前 2:10–11：圣灵参透神深奥的事。约 14–16：他是另一位保惠师，把人引到基督那里，因为基督的工作已经完成。罗 8:9–16：没有圣灵的人就不是属基督的；圣灵使我们呼叫「阿爸，父」。弗 1:13–14：他是印记与凭据。</p>
+  <p><strong>前因。</strong>旧约已有神的灵参与创造（创 1:2）、装备士师与先知、并应许被浇灌（珥 2:28–29；结 36:26–27）。五旬节不是圣灵开始存在，而是升高的基督把灵浇灌下来，开创宣教与教会的新阶段（徒 2）。</p>
+  <p><strong>后果。</strong>人能说「我信」，本身就是圣灵的果子。海德堡 Q&amp;A 53：他与父、子同为永恒的神；他被赐给我，使我藉真信心分享基督及其恩益，安慰我，与我永远同在。多特第三与第四项：人死在罪中，不能自救；重生是圣灵的超自然工作，藉真道发生，不废除人的回应，却不靠人的自决当作源头。</p>
+  <h3 id="sec-a10-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">系统</span><h4>由父和子所出</h4><p class="mb-0">比利时信条第 11 条与海德堡 Q&amp;A 53：圣灵由父和子所出。这是西方教会在尼西亚信经中所承认的「和子」（filioque），改革宗继承之。希腊原文 381 年文本写「由父所出」。教学上要诚实：历史文本有差异；欧陆信条的教义立场是父与子是圣灵发出的共同源头，好说明灵把子的救赎施行出来，而不是与子竞争的另一位救主。</p></div>
+    <div class="card"><span class="card-tag">护教</span><h4>两种削价</h4><p class="mb-0"><span class="mark-warn">警戒</span>把圣灵降为非位格的能力；或把圣灵的工作说成与圣经、与基督无关的私人启示。信经后面立刻讲教会与赦罪，把灵放在福音管道里。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>新约的应许</h4><p class="mb-0">耶 31 与结 36 的新心，在圣灵里赐下。约的内部化不是人突然变强，而是神自己来住。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>与基督同荣</h4><p class="mb-0"><span class="mark-apply">应用</span>约 16:14：灵要荣耀基督。一次聚会、一本书、一段经历若把人从基督身上带开，就不是在跟随信经里的圣灵。</p></div>
+  </div>
+  <h3 id="sec-a10-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 53、主日 8 的 Q&amp;A 24–25。比利时信条第 8–9、11 条。尼西亚信经圣灵条款：主，赐生命者，由父（西方：和子）所出，与父子同受敬拜、同受尊荣，曾藉先知说话。亚他那修信经第 6、15、23 段：圣灵是神、是主，却非三位神；圣灵由父和子所出（拉丁传统）。多特第三与第四项第 1–4、10–12、16–17 条：败坏、有效恩典、管道仍是福音的宣讲。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>圣灵是主，不是气氛；工作是把基督给我</strong>。<span class="mark-apply">应用</span>祷告求圣灵时，具体求「使我信得更真、爱教会、恨恶罪」，而不是只求一种感觉停留得久一点。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a11">
+  <h2 id="sec-a11">11 我信圣而公之教会</h2>
+  <p>「我信教会」与「我信上帝」的文法在拉丁文里并不完全相同：信经对神是信靠一位位格；对教会是相信神有这一项工作——他招聚教会。教会是信心的对象只在这个意义上：我们相信基督确实有一个被召聚的百姓。教会本身不是救主。</p>
+  <h3 id="sec-a11-what">说什么，前因与后果</h3>
+  <p><strong>圣。</strong>不是指成员已经毫无瑕疵，而是指教会被分别出来归神，靠基督的血与圣灵的更新（林前 1:2；弗 5:25–27）。海德堡 Q&amp;A 54：子藉他的灵和圣言，从全世界招聚、护卫、保守一群选民，使他们得永生，并且我是这群体的活肢体，永远是。</p>
+  <p><strong>公（大公、普遍）。</strong><span class="mark-hard">难点</span>中文「公」不是「罗马公教」的专名。原文大意是普遍、照着全体。比利时信条第 27 条：这教会从世界开头就有，直到世界末了；分散在各地，却因基督的灵合一；不限于某地、某时代、某些人。旧约的会众与新约的教会是同一个约的百姓在不同施行里，不是两个神的两群人。</p>
+  <p><strong>前因。</strong>神从亚伯拉罕就在呼召一族（创 12），在西奈成为祭司的国度（出 19），在五旬节后显为万国的教会（徒 2；弗 2:11–22）。太 16:18：主自己建造他的教会，阴间的权柄不能胜过。</p>
+  <p><strong>后果。</strong>私人基督徒若拒绝与有形教会有分，就是拒绝基督招聚人的方式。比利时信条第 28 条：在教会之外没有救恩——这句话的意思是神不把救恩赐给故意离弃真教会、自外于基督身体的人；不是说行政名册等于重生名册。第 29 条给出真教会的标记：纯正宣讲福音、按基督的设立施行圣礼、执行纪律以责罚罪恶。假教会则把人的规条放在神的话以上。</p>
+  <h3 id="sec-a11-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">系统</span><h4>无形与有形</h4><p class="mb-0">选民的总数唯独神知道；有形教会里麦子与稗子同在，直到收割（太 13）。改革宗不因此取消有形教会的责任，也不把有形群体直接等同于每一个都重生。</p></div>
+    <div class="card"><span class="card-tag">历史</span><h4>「使徒」在尼西亚里</h4><p class="mb-0">尼西亚信经说「一个圣洁、大公、使徒的教会」。使徒信经未写「使徒的」三字，但「使徒信经」这名字与徒 2:42 的教训，就是这意思：教会建在使徒的见证上，不是建在后来的新启示上。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>约的群体</h4><p class="mb-0">教会是恩典之约的有形家庭，包含应许与劝戒、圣道与圣礼。父母带儿女来，不是迷信血统，而是信神对信徒后裔的应许（创 17；徒 2:39），并按信条施行圣礼——细节见比利时信条第 34 条与海德堡论洗礼，此处不展开礼文。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>受伤之后</h4><p class="mb-0"><span class="mark-apply">应用</span>教会使人受伤是真的。信经仍要我们信「圣而公之教会」，意思是回到有标记的真教会，而不是发明一个只有自己的教会。纪律与悔改属于教会的圣洁，不是可有可无的气氛。</p></div>
+  </div>
+  <h3 id="sec-a11-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 54。比利时信条第 27–32 条（教会、加入的本分、标记、治理与纪律）。尼西亚信经：一个圣洁大公使徒的教会。亚他那修信经以「大公信仰」起头（第 1 段），指的是这信仰的普遍性，与教会的「公」同一词源。多特第五项第 14 条劝人用圣道与圣礼作坚忍的管道——教会不是装饰。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>圣 = 被分别归基督；公 = 全世界、全时代，不是罗马专名</strong>。<span class="mark-apply">应用</span>用比利时信条第 29 条的三标记为本堂会问三个问题：福音纯正吗？圣礼被尊重吗？罪被劝戒吗？</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a12">
+  <h2 id="sec-a12">12 我信圣徒相通</h2>
+  <p>紧挨着教会的，不是组织条例，而是<strong>相通</strong>。信基督的人不能只与基督发生私人关系，却与基督的身体无关。</p>
+  <h3 id="sec-a12-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>海德堡 Q&amp;A 55 两层：第一，每个信徒都是基督的肢体，与他和他一切的丰富与恩赐相通；第二，每个信徒有责任甘心乐意地使用自己的恩赐使其他肢体得益处。弗 4:1–16；罗 12:4–8；林前 12；约壹 1:3。相通首先是分享基督，然后才是彼此分享。</p>
+  <p><strong>前因。</strong>五旬节后的教会「都恒心遵守使徒的教训，彼此交接、擘饼、祈祷」（徒 2:42）。「交接」就是这句信经的生活版。旧约会众共享节期、祭与律法，已经是约中的相通；新约把这相通显明为跨民族的一个身体。</p>
+  <p><strong>后果。</strong>恩赐不是身份徽章。贫穷的肢体、受苦的肢体、远方的肢体都在「相通」的句子里。来 10:24–25 停止聚会，就是退出相通。金钱、代祷、劝勉、接待，是这句信经的肉身。</p>
+  <h3 id="sec-a12-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">难点</span><h4>不是拜圣人</h4><p class="mb-0"><span class="mark-hard">难点</span>「圣徒」在新约里通常指一切被分别为圣的信徒（罗 1:7），不是等级更高的死者。改革宗拒绝向已死的圣徒祷告或把他们当作中保。比利时信条第 26 条：我们只有一位中保。与已死信徒的相通，是同在一位基督里、同有一个盼望，不是通灵或功德转让。</p></div>
+    <div class="card"><span class="card-tag">系统</span><h4>与赦罪相邻</h4><p class="mb-0">下一句就是罪得赦免。相通的群体是承认自己需要赦免的群体，不是表演完美的群体。约壹 1:7–9 把彼此相交与罪得洁净放在同一段。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>家的语言</h4><p class="mb-0">约的公式「我要作你们的神，你们要作我的子民」必然是复数。相通是约的社会学。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>恩赐清单</h4><p class="mb-0"><span class="mark-apply">应用</span>问：我这周用哪一项具体恩赐服事了一个具体的人？说不出名字，就还停留在口号式的相通。</p></div>
+  </div>
+  <h3 id="sec-a12-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 55。比利时信条第 28 条（与教会联合的本分）、第 31–32 条（职分是为了服事与秩序，不是为了私人国度）。尼西亚信经未单列此句，其「一个教会」已经包含合一。亚他那修信经没有单独的教会论段落；相通的教义由海德堡补上教牧精度。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>先通于基督的丰富，再通于肢体的需要</strong>。<span class="mark-apply">应用</span>把林前 12 与海德堡 Q&amp;A 55 对读：恩赐的试验是别人是否得建造。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a13">
+  <h2 id="sec-a13">13 我信罪得赦免</h2>
+  <p>信经把福音的益处压缩成五个字。没有这一句，前面的十字架只是历史；有这一句，十字架成为我的赦免。</p>
+  <h3 id="sec-a13-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>诗 103:2–4、10–12；弥 7:18–19；罗 3:21–26；8:1；弗 1:7；西 1:13–14；约壹 1:9。赦免是神因基督的满足，不再将罪归给我们，反将基督的义归给我们。海德堡 Q&amp;A 56：神因基督的补偿，不再记念我的罪，也不记念我必须与之争战一生的罪性；却把基督的义白白领给我，使我不至再被定罪。</p>
+  <p><strong>前因。</strong>律法显出罪（罗 3:20；海德堡 Q&amp;A 3–5）。人不能作满足（Q&amp;A 12–14）。所以赦免不能从「神忽然不在乎公义」里生出来，只能从前面已经承认的受难、受死里生出来。新约的应许句就是「我要赦免他们的罪孽，不再记念他们的罪愆」（耶 31:34）。</p>
+  <p><strong>后果。</strong>真信心抓住这应许（海德堡 Q&amp;A 21、60–61）。比利时信条第 22–23 条：称义唯独因信，信本身不是功德，信所抓住的基督才是义。第 24 条：称义的人必结果子，但善行不作为称义的一部分。多特第一项与第二项拒绝把赦免说成神预见我们的信心行为才肯付钱；第五项拒绝「既得赦免就可以安然犯罪」。</p>
+  <h3 id="sec-a13-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">教会</span><h4>钥匙</h4><p class="mb-0">赦免不是教会发明的，却在教会中被宣讲。海德堡论钥匙（Q&amp;A 83–85）：福音的宣讲与纪律，向信的人开启天国，向不信的人关闭。神职人员不是赦免的主人。尼西亚信经说「承认使罪得赦的独一洗礼」，把赦免的印记连到洗礼，而不是连到功德库。</p></div>
+    <div class="card"><span class="card-tag">难点</span><h4>每日的罪</h4><p class="mb-0"><span class="mark-hard">难点</span>称义一次成立，悔改一生继续。主祷文仍求「免我们的债」。这不是称义不稳，而是儿女继续承认罪、继续抓住同一位中保。不要把每次认罪讲成「重新被收纳一次，好像昨天才从约里掉出去」。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>约的核心条款</h4><p class="mb-0">没有赦罪，神作我们的神这句话就无法向罪人说出口。信经这一句是耶 31 在口里的回声。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>良心</h4><p class="mb-0"><span class="mark-apply">应用</span>海德堡 Q&amp;A 1 与 56 是为失眠的良心写的。把罪说具体，再把「不再记念」说具体，不要用空泛的「神爱你」跳过补偿。</p></div>
+  </div>
+  <h3 id="sec-a13-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 56，并 Q&amp;A 21、60–61；钥匙职分 Q&amp;A 83–85 为宣讲场景。比利时信条第 21–24 条。尼西亚信经：承认独一洗礼使罪得赦（洗礼是印证，不是第二救主）。亚他那修信经没有单独的称义定义，其审判段落必须用称义教义来平衡，免得人把第 43 段读成靠行为赚永生。多特第二项（罪得赦免的根据在基督的死）、第一项（谁得着这赦免出于拣选的恩典）、第五项第 1–2 条（仍会犯罪的人没有因此丧失称义）。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>根据在补偿，领受藉信心，宣告在福音，果子在新生命</strong>。<span class="mark-apply">应用</span>向人宣告赦免时用圣经的句子（赛 1:18；约壹 1:9；罗 8:1），并指向基督的血，不指向说话者的人格魅力。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a14">
+  <h2 id="sec-a14">14 我信身体复活</h2>
+  <p>基督的复活是初熟的果子；这一句是果子本身。信经不肯用「灵魂不灭」代替「身体复活」。</p>
+  <h3 id="sec-a14-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>伯 19:25–27：我必在肉体之外得见神——约伯的盼望钉在身体与眼睛上，而不是钉在抽象永存。但 12:2；约 5:28–29：时候要到，凡在坟墓里的都要听见他的声音出来。林前 15:35–49：所种的必复活；不是另一套无关的身体，而是这卑微的身体改变形状（腓 3:20–21）。海德堡 Q&amp;A 57：不只我的灵魂在死后立刻被提到基督那里，我的身体也要因基督的能力复活，再与灵魂联合，并且与基督荣耀的身体相似。</p>
+  <p><strong>前因。</strong>创造主造了身体，所以救赎若丢掉身体，就等于承认二元论赢了第一句。基督自己的墓是空的，所以我们的墓不能是故事的结局。罗 8:23：我们等候得着儿子的名分，就是身体得赎。</p>
+  <p><strong>后果。</strong>死亡仍然是仇敌，但不是主。哀哭是诚实的；绝望不是。伦理上也因此尊重身体：它是将来复活的种子，不是可随便糟蹋的外壳（林前 6:13–20）。比利时信条第 37 条：审判之日，人要带着自己的身体复活。</p>
+  <h3 id="sec-a14-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">难点</span><h4>死后与复活之间</h4><p class="mb-0"><span class="mark-hard">难点</span>信徒的灵魂死后立刻与基督同在（路 23:43；腓 1:23；海德堡 Q&amp;A 57 前半），这是中间状态，不是最终盼望。最终盼望是灵魂与身体重新联合。不要把「离世与主同在」讲成已经是复活的全部。</p></div>
+    <div class="card"><span class="card-tag">释经</span><h4>众人复活</h4><p class="mb-0">约 5:29 说行善的复活得生，作恶的复活定罪。身体复活不只是信徒的特权术语，而是全人类的终局；信经在教会的口中说「我信」，焦点是信徒因基督而有的安慰。定罪的复活见比利时信条第 37 条与亚他那修信经第 41–43 段。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>产业包括被造界</h4><p class="mb-0">亚伯拉罕的应许最终不是一片抽象云彩。罗 4:13 把应许说到承受世界。身体复活与新天新地是约的地土被成全。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>病榻与葬礼</h4><p class="mb-0"><span class="mark-apply">应用</span>不要对临终者只说「去一个更好的地方」就停住。加上「这身体也要复活」。对残障与疾病，盼望不是鄙视身体，而是身体得赎。</p></div>
+  </div>
+  <h3 id="sec-a14-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 57。比利时信条第 37 条。尼西亚信经：我望死人复活。亚他那修信经第 41 段：他来的时候，所有的人都要带着自己的身体复活。多特第五项第 1 条承认重生之人里面仍有肉体的软弱，因此复活的盼望不是对自己进步的自夸。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>不是灵魂飘走，是身体得赎；中间同在，末日联合</strong>。<span class="mark-apply">应用</span>葬礼选用林前 15 与海德堡 Q&amp;A 57，把安慰说全。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a15">
+  <h2 id="sec-a15">15 我信永生</h2>
+  <p>永生不是「很长的时间」而已，而是认识独一的真神，并且认识他所差来的耶稣基督（约 17:3）。时间上的永远，是这相交的成全。</p>
+  <h3 id="sec-a15-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>约 3:16；5:24；11:25–26；罗 6:23；约壹 5:11–12。海德堡 Q&amp;A 58：我如今心里已经开始感觉到永恒的喜乐，此生之后将要得着完全的福乐，是眼睛未曾看见、耳朵未曾听见、人心未曾想到的，用以永远赞美神。</p>
+  <p><strong>前因。</strong>赦罪除去关系的阻隔，身体复活除去死亡的阻隔，然后「永生」说出这关系的内容：与神同在（启 21:3）。若没有前面的十字架与复活，永生只是宗教对死亡的愿望。</p>
+  <p><strong>后果。</strong>永生已经开始，所以成圣不是用行为去购买一张尚未生效的门票，而是在已经赐下的生命里学习赞美。永生尚未完成，所以今生任何苦乐都不是结局。信徒对世界既不逃入禁欲的憎恨，也不把今生当成天堂。</p>
+  <h3 id="sec-a15-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">圣经神学</span><h4>从伊甸园到新耶路撒冷</h4><p class="mb-0">创 2 的生命树因罪被守住；启 22 的生命树重新向神的仆人敞开。信经最后的福分，是圣经第一幕被十字架修复之后的成全，而且更稳固——再没有蛇能推翻坐在宝座上的羔羊。</p></div>
+    <div class="card"><span class="card-tag">难点</span><h4>永远的沉沦</h4><p class="mb-0"><span class="mark-hard">难点</span>信经正面说「永生」，审判那一句已经包含反面。圣经也说永远的刑罚（太 25:46；帖后 1:9）。改革宗不用「永生」去暗示所有人最终都被拯救。安慰是给在基督里的人；呼召是向所有人传福音。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>神自己是产业</h4><p class="mb-0">诗 73:26：除你以外，在天上我还有谁呢？约的最高条款不是地土的尺寸，而是「我要作他们的神」。永生就是这条款完全兑现。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>现在就开始的喜乐</h4><p class="mb-0"><span class="mark-apply">应用</span>Q&amp;A 58 说喜乐「如今心里已经开始」。若信仰只有对来世的推迟，没有现今的赞美、祷告与相爱，就是还没信到这一句的前半。</p></div>
+  </div>
+  <h3 id="sec-a15-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 58，并 Q&amp;A 1 的「今生与来生唯一的安慰」。比利时信条第 37 条的结尾：神的子民要得着荣耀与永远的喜乐。尼西亚信经：并望来世的生命。亚他那修信经第 43–44 段：进入永世的生命；这是大公信仰。多特第五项第 8–10 条：神保守选民到底，使他们得着救恩；这保守本身就是永生之恩不被收回。</p>
+  <div class="callout callout-apply">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>现在尝，来世饱；内容是认识神，不是无限度假</strong>。<span class="mark-apply">应用</span>用约 17:3 检查自己对「永生」的想象：若画面里没有神，那不是信经的永生。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-a16">
+  <h2 id="sec-a16">16 阿们</h2>
+  <p>阿们不是礼仪上的句号。它是把整篇信经从「一段文字」变成「我的认信」。</p>
+  <h3 id="sec-a16-what">说什么，前因与后果</h3>
+  <p><strong>说什么。</strong>希伯来文「阿们」与「确实、信实」同根。教会用它表示：这话是真的，我愿意站在上面。林后 1:20：神的应许不论有多少，在基督里都是是的，所以我们藉着他说阿们，使荣耀归于神。信经的阿们是对父、子、圣灵一切作为的盖印。</p>
+  <p><strong>前因。</strong>真信心的定义里已经有这意思。海德堡 Q&amp;A 21：真信心不只是知识，也是确信，是圣灵藉福音在我心里作成的——神白白赐下赦罪、永远的义与救恩，不单赐给别人，也赐给我。Q&amp;A 22：基督徒必须相信福音所应许的一切，就是使徒信经所综述的。</p>
+  <p><strong>后果。</strong>海德堡 Q&amp;A 59：相信这一切对你有何益处？使我在神面前在基督里称义，并且承受永生。阿们把益处从「教义正确」推进到「这是我的」。Q&amp;A 129 解释主祷文的阿们：「这是确实的，因为神听我祷告，比我心里感觉自己想要这些事更加确实。」词义可以借来理解信经的收束：<span class="mark-core">重点</span>确实性不建在情绪的稳定上，而建在神的信实与基督的完成上。情绪低落时仍可说阿们。</p>
+  <h3 id="sec-a16-ang">多个角度</h3>
+  <div class="card-grid cols-2">
+    <div class="card"><span class="card-tag">敬拜</span><h4>一起说</h4><p class="mb-0">会众同声的阿们，是圣徒相通的一个音节。个人默想与会众宣告都需要它。</p></div>
+    <div class="card"><span class="card-tag">难点</span><h4>怀疑怎么办</h4><p class="mb-0"><span class="mark-hard">难点</span>阿们不是声称自己没有疑问。可 9:24：「我信，但我信不足，求主帮助。」真信心会挣扎，假信心才需要随时表演毫无疑问。挣扎时回到信经的对象，而不是回到自信的强度。</p></div>
+    <div class="card"><span class="card-tag">圣约</span><h4>约中的回应</h4><p class="mb-0">神先说「我要作你们的神」。阿们是罪人被恩典放开喉咙之后的回答，不是人先向神递交的资格证明。</p></div>
+    <div class="card"><span class="card-tag">教牧</span><h4>可背、可说、可教</h4><p class="mb-0"><span class="mark-apply">应用</span>家庭与慕道班：先每周诵读全文并同声阿们，再每周啃一个钉。顺序不要反。</p></div>
+  </div>
+  <h3 id="sec-a16-creed">信条坐标与记忆</h3>
+  <p><span class="mark-creed">信条</span>海德堡 Q&amp;A 21–23、59 是信经阿们的教理位置。Q&amp;A 129 提供「阿们」一词的改革宗教理定义（在主祷文的语境中，词义相通）。比利时信条第 22–23 条：信心抓住基督，使人在神面前站立。亚他那修信经第 44 段以「这是大公信仰，人除非忠实相信，就不能得救」作收束，语气同样是要求认信，而不是要求背诵表演。多特第一项第 12 条与第五项第 9–13 条讨论确信：确信是可能的、由果子与圣灵的见证扶持，却从不叫人轻慢。</p>
+  <div class="callout callout-hope">
+    <strong class="cot">记忆 · 应用</strong>
+    <p class="mb-0">记忆钩：<strong>阿们 = 确乎如此，且是给我的</strong>。<span class="mark-apply">应用</span>今天若只能做一件事：出声把信经读完，在最后停两秒，再说一次阿们，并加上林后 1:20 的意思——荣耀归于神。</p>
+  </div>
+</section>
+
+<section class="mod-guide" id="s-table">
+  <h2 id="sec-table">📎 条款对照总表</h2>
+  <p>速查用。其他信经与信条请打开正式译本核对，下表不代替原文。</p>
+  <div class="table-wrap table-scroll">
+    <table>
+      <thead>
+        <tr><th>使徒信经</th><th>海德堡</th><th>比利时信条</th><th>多特</th><th>尼西亚条款主题</th><th>亚他那修</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>父，全能，创造</td><td>26–28</td><td>1、8–9、12–13</td><td>一.1 预设</td><td>论父与创造</td><td>3–20</td></tr>
+        <tr><td>耶稣基督，独生子，主</td><td>29–34</td><td>10、17–20</td><td>二.1–2</td><td>论子：同质、受生非受造</td><td>29–37</td></tr>
+        <tr><td>感孕，童贞女所生</td><td>35–36</td><td>18–19</td><td>—</td><td>道成肉身</td><td>31–36</td></tr>
+        <tr><td>彼拉多手下受难</td><td>37–39</td><td>20–21</td><td>二</td><td>彼拉多手下被钉</td><td>38</td></tr>
+        <tr><td>钉死，埋葬</td><td>40–43</td><td>21</td><td>二.2–4、8</td><td>被害、埋葬</td><td>38</td></tr>
+        <tr><td>降在阴间</td><td>44</td><td>21 的十架深度</td><td>二</td><td>（以埋葬与复活包住）</td><td>38</td></tr>
+        <tr><td>第三日复活</td><td>45</td><td>19–20、26</td><td>五.6–8</td><td>第三日复活</td><td>38</td></tr>
+        <tr><td>升天，坐在右边</td><td>46–51</td><td>26</td><td>二.3；五</td><td>升天、坐在父右</td><td>39</td></tr>
+        <tr><td>再来审判</td><td>52</td><td>37</td><td>一；五</td><td>荣耀中再来、审判、国无穷</td><td>40–44</td></tr>
+        <tr><td>圣灵</td><td>53；24–25</td><td>8–9、11</td><td>三/四</td><td>主、赐生命、同受敬拜</td><td>6、15、23</td></tr>
+        <tr><td>圣而公之教会</td><td>54</td><td>27–32</td><td>五.14</td><td>一圣大公使徒教会</td><td>1（大公信仰）</td></tr>
+        <tr><td>圣徒相通</td><td>55</td><td>28、31</td><td>—</td><td>（含于一个教会）</td><td>—</td></tr>
+        <tr><td>罪得赦免</td><td>56；21；60</td><td>22–24</td><td>一；二；五.1–2</td><td>洗礼与赦罪</td><td>以称义教义读 43</td></tr>
+        <tr><td>身体复活</td><td>57</td><td>37</td><td>五.1</td><td>死人复活</td><td>41</td></tr>
+        <tr><td>永生</td><td>58；1</td><td>37</td><td>五.8–10</td><td>来世生命</td><td>43–44</td></tr>
+        <tr><td>阿们</td><td>21–23、59；词义 129</td><td>22–23</td><td>一.12；五.9–13</td><td>（认信的肯定）</td><td>44</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 id="sec-use-flow">诵读之前如何校准</h3>
+  <div class="mermaid-wrap diagram-scroll">
+    <pre class="mermaid">
+flowchart TB
+  Q["准备承认信经"] --> A{"这一句在讲谁?"}
+  A -->|"父 / 子 / 灵是谁"| N["尼西亚 · 亚他那修<br/>比利时信条第8-11、18-19条"]
+  A -->|"十字架是否足够"| D["多特第二项<br/>海德堡 Q&amp;A 40-44"]
+  A -->|"我如何能信"| G["多特第三与第四项<br/>海德堡 Q&amp;A 21、53、60"]
+  A -->|"教会与生活"| C["比利时信条第27-29条<br/>海德堡 Q&amp;A 54-55"]
+  A -->|"死后还有什么"| E["海德堡 Q&amp;A 52、57-58<br/>比利时信条第37条"]
+  N --> W["出声诵读 · 阿们"]
+  D --> W
+  G --> W
+  C --> W
+  E --> W
+    </pre>
+  </div>
+</section>
+
+<section class="mod-appendix" id="s-end">
+  <h2 id="sec-end">🏁 收束：把纲放回圣经</h2>
+  <p>使徒信经会背完，并不等于已经明白圣经。它的用途是：你在长卷书、在哀哭、在慕道友的问题里迷路时，能回到这十六钉，知道自己站在哪一段救赎史，再打开对应的经文与信条条款。</p>
+  <div class="card-grid cols-3">
+    <div class="card card-gold">
+      <span class="card-tag">本周</span>
+      <h4>三件可做的事</h4>
+      <p class="mb-0">① 每日出声诵读全文。② 只深挖一个钉，查出上表那一格的问答。③ 用「前因 / 这句话 / 后果」向一个人讲六十秒。</p>
+    </div>
+    <div class="card card-gold">
+      <span class="card-tag">不要</span>
+      <h4>三种用法</h4>
+      <p class="mb-0">不要把它当圣经以外的新启示。不要只背难点句去赢辩论。不要把「公教会」读成某一宗派的商标。</p>
+    </div>
+    <div class="card card-gold">
+      <span class="card-tag">要</span>
+      <h4>回到福音</h4>
+      <p class="mb-0">父创造并收纳，子降卑又升高，灵把赦罪与永生赐给教会。荣耀只归于这位神。</p>
+    </div>
+  </div>
+  <div class="motto">
+    <div class="motto-text">我信。不是因为句子短，而是因为说这些话的神是信实的。</div>
+    <div class="motto-hint">Soli Deo Gloria · 海德堡 Q&amp;A 1、21–23、129</div>
+  </div>
+  <details class="fold appendix" id="appendix-terms">
+    <summary><span class="fold-ico" aria-hidden="true">📖</span>术语小表</summary>
+    <div class="fold-body">
+      <h3 id="sec-terms">术语</h3>
+      <div class="table-wrap table-scroll">
+        <table>
+          <thead><tr><th>词</th><th>在本页的用法</th></tr></thead>
+          <tbody>
+            <tr><td>使徒信经</td><td>西方洗礼信经的成熟短纲，内容是使徒的信仰，不是十二人分句的会议记录</td></tr>
+            <tr><td>信仰准则</td><td>二世纪已出现的短句式认信，用来识别与福音不合的教导</td></tr>
+            <tr><td>同质</td><td>尼西亚用以说明子与父同一神性本质；使徒信经未写此词，却不与之相反</td></tr>
+            <tr><td>降卑 / 升高</td><td>基督取了人性之后的两种状态：受苦至死，与复活、升天、坐席、再来</td></tr>
+            <tr><td>圣而公</td><td>被分别归神；普遍、全时代，不是罗马教会的专名</td></tr>
+            <tr><td>相通</td><td>分享基督的恩益，并彼此服事；不是向死人祈求</td></tr>
+            <tr><td>称义</td><td>神因基督的义宣判罪人无罪并得称为义，藉信领受</td></tr>
+            <tr><td>中间状态</td><td>死后、身体复活之前，信徒灵魂与基督同在</td></tr>
+            <tr><td>阿们</td><td>确实如此；认信与祷告的印</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </details>
+  <p class="note">年代与文献史采用教学常用的约略分期。信条编号依三项联合信条与两大信经的通行条款；中文措辞请以教会正式译本为准。本页是学习纲要，不是宗派的立法文本。</p>
+</section>
+
+<footer class="site-footer">
+  <p class="footer-brand">欧陆改革宗 · 使徒信经研读</p>
+  <p class="footer-sub">三项联合信条 · 尼西亚信经 · 亚他那修信经 · 以基督为中心</p>
+  <p class="text-muted">静态教学站点。使徒信经传统中文收录于正文；其他信经与信条只标条款号，请对照正式译本。年代为教学约数。</p>
+  <p><a href="#top">返回顶端</a></p>
+</footer>
+
+      </div>
+    </main>
+  </div>
+
+  <button type="button" class="back-top" id="back-top" aria-label="回到顶部">↑</button>
+  <script src="assets/app.js?v=creed20261003" defer></script>
+</body>
+</html>
