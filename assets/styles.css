@@ -2337,3 +2337,94 @@ details.fold.ql-card summary {
   .ql-one { flex-basis: 100%; font-size: .84rem; }
   .vt-item { flex-basis: 132px; }
 }
+
+/* v20261003-2 — geography, bible rail, article sheets */
+.geo-map-card {
+  padding: .75rem .75rem .9rem;
+  overflow: hidden;
+  margin: 1rem 0 1.15rem;
+}
+.map-svg-lg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.art-sheet {
+  margin: .9rem 0 1.15rem;
+  padding: .9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+  background: rgba(12, 24, 41, 0.55);
+  box-shadow: var(--shadow-soft);
+}
+.art-grid {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: 1fr;
+}
+.art-block {
+  min-width: 0;
+  padding: .75rem .8rem;
+  border-radius: var(--radius-sm);
+  background: rgba(21, 34, 56, 0.72);
+  border: 1px solid var(--border);
+}
+.art-block h4 {
+  margin: 0 0 .35rem;
+  font-size: .92rem;
+  color: var(--gold-light);
+  letter-spacing: .02em;
+}
+.art-block p { margin: 0; }
+.art-block.art-wide { grid-column: 1 / -1; }
+.verses {
+  color: var(--accent-soft);
+  font-variant-numeric: tabular-nums;
+}
+.memory-line {
+  font-family: var(--font-serif);
+  color: var(--gold-light);
+  font-weight: 650;
+}
+.angle-grid { margin-top: .75rem; }
+.bible-rail {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: 1fr;
+  margin: 1rem 0 1.25rem;
+}
+.bible-node {
+  min-width: 0;
+  padding: .85rem .9rem .95rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 28, 48, 0.9);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+}
+.bible-node h4 {
+  margin: .15rem 0 .35rem;
+  font-size: 1.02rem;
+}
+.bn-step {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: var(--gold-light);
+}
+.bible-node p { margin: 0; color: var(--text-soft); }
+.vt-doc { border-color: rgba(123, 159, 224, .55); background: rgba(123, 159, 224, .1); }
+.vt-form { border-color: rgba(94, 196, 192, .5); background: rgba(94, 196, 192, .1); }
+.vt-west { border-color: rgba(212, 175, 55, .55); background: rgba(212, 175, 55, .1); }
+@media (min-width: 768px) {
+  .art-grid { grid-template-columns: 1fr 1fr; }
+  .bible-rail { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1280px) {
+  .art-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .bible-rail { grid-template-columns: 1fr 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .viz-timeline { scroll-behavior: auto; }
+}
